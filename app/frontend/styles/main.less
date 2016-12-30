@@ -1,0 +1,731 @@
+// Font
+@import "font";
+
+// Normalize
+@import "normalize";
+
+@wrap-width: 78.5rem;
+@cpp_color: #5fb12c;
+@text_color_default: #4f4f4f;
+@title_color: #2b2a29;
+
+html {
+  font-size: 7vmin;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  color: @text_color_default;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: @title_color;
+}
+
+.mixin-flex {
+  display: flex;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.cpp-r {
+  width: 100vw;
+  &.main {
+    .cpp-r_header {
+      .cpp-r_wrap {
+        background: url(../template/bg-main-moscow.jpg) no-repeat 90.5% 0;
+        background-size: 48.5rem auto;
+        padding-top: 2.5rem;
+      }
+    }
+  }
+}
+.cpp-r_wrap {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0.8rem;
+}
+.cpp-r_footer {
+  min-height: 4.5rem;
+  background: #2b2a29;
+  color: #fff;
+  box-sizing: border-box;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.cpp-b_responsive-row-cols {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  .row-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+}
+.cpp-b_main-menu {
+  .cpp-e_main-menu-button {
+
+  }
+  .cpp-b_main-menu-links {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2.375rem;
+
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .main-menu_link {
+      display: flex;
+      margin-right: 1.55rem;
+      a {
+        display: flex;
+        text-decoration: none;
+        color: @text_color_default;
+        &:hover {
+          color: @cpp_color;
+        }
+      }
+    }
+  }
+}
+.cpp-b_contacts {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .cpp-e_contact {
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding-left: 2.37rem;
+    height: 1.5rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+    white-space: nowrap;
+    color: @text_color_default;
+    a {
+      color: inherit;
+      text-decoration: none;
+      &:hover {
+        color: @cpp_color;
+      }
+    }
+    &.phone {
+      background: url(../template/icon-call.png) no-repeat 0 50%;
+      background-size: auto 100%;
+    }
+    &.email {
+      background: url(../template/icon-mail.png) no-repeat 0% 78%;
+      background-size: auto 1rem;
+    }
+  }
+}
+.cpp-b_program-day {
+  overflow: scroll;
+  padding-left: 0.5rem;
+  .date {
+    font-size: 2.188rem;
+    font-weight: 300;
+    position: relative;
+    top: -0.75rem;
+    margin-bottom: 0;
+    color: @cpp_color;
+  }
+  table {
+    border: 1px solid;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    table-layout: fixed;
+    background: #FFF;
+    tr {
+      border: 1px solid;
+      th, td {
+        border: 1px solid;
+      }
+      th {
+        font-size: 1.125rem;
+        font-weight: 700;
+        line-height: 1.625rem;
+        text-transform: uppercase;
+        padding: 0.65rem 0;
+      }
+      td {
+        font-size: .938rem;
+        font-weight: 400;
+        line-height: 1.313rem;
+        padding: 1rem 1.30rem;
+        &:first-child {
+          font-size: .938rem;
+          font-weight: 700;
+          line-height: 1.875rem;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .gray {
+    background-color: #d9dadb;
+  }
+  .speaker {
+    color: #5fb12c;
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.313rem;
+  }
+}
+.cpp-b_number-facts {
+  .mixin-flex;
+  .cpp-b_responsive-row-cols {
+    .number-fact {
+      .mixin-flex;
+      flex-direction: column;
+      align-items: center;
+      .number {
+        .mixin-flex;
+        font-size: 5.125rem;
+        font-weight: 600;
+        line-height: 10.25rem;
+        color: @cpp_color;
+        margin-right: 1.2rem;
+      }
+      .fact {
+        .mixin-flex;
+        font-size: 1.063rem;
+        font-weight: 400;
+        line-height: 1.563rem;
+      }
+    }
+  }
+
+}
+.cpp-b_sidetext {
+  .sidetext-left {
+    img {
+      width: 11rem;
+      padding-left: 0;
+      padding-top: 2rem;
+    }
+  }
+  .sidetext-right {
+
+  }
+}
+.cpp-b_block-text {
+  line-height: 1.59rem;
+  p {
+    margin-bottom: 1.65rem;
+  }
+}
+.cpp-b_section {
+  margin-bottom: 4rem;
+  &.gray-section {
+    background: url("../template/bg-gray-lines.jpg") 50% 0;
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 6.25rem;
+    }
+  }
+  &.section-contacts {
+    background: url("../template/bg-pluses-table.jpg") repeat-x 50% 50%;
+    background-size: cover;
+    margin-bottom: 0;
+    .cpp-b_responsive-row-cols {
+      .row-col {
+        &:first-child {
+
+        }
+      }
+    }
+  }
+}
+.cpp-b_copyrights {
+  a {
+    color: #FFF;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    height: 1.3rem;
+  }
+}
+.cpp-b_bordered-text {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.563rem;
+  padding: 1.45rem 2rem;
+  margin-top: 0.5rem;
+  border: 0.188rem solid @title_color;
+  color: @title_color;
+}
+.cpp-b_talks {
+  flex-direction: row;
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.cpp-b_talk, .cpp-b_talks_description {
+  display: flex;
+  width: 22.35rem;
+  background: #fff;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  align-items: stretch!important;
+}
+.cpp-b_talk {
+  margin-top: 1.57rem;
+  padding-left: 2rem;
+
+  .talk-date-track {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    .date {
+      font-size: 1.813rem;
+      font-weight: 600;
+      flex-shrink: 0;
+      display: flex;
+      margin-bottom: 0.6rem;
+    }
+    .track {
+      display: flex;
+      flex-shrink: 0;
+    }
+  }
+
+  .talk-link {
+    color: @cpp_color;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 6.938rem;
+  }
+
+  .talk-speaker-photo {
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem 0;
+  }
+  .talk-content-fixed {
+    height: 16rem;
+    overflow: hidden;
+    position: relative;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 3rem;
+      position: absolute;
+      bottom: 0;
+      background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+      background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    }
+  }
+  .talk-head {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+
+
+  .talk-speaker-name {
+    font-size: 1rem;
+    display: flex;
+    font-weight: 300;
+    height: 2rem;
+    flex-shrink: 0;
+    line-height: 1.313rem;
+  }
+
+
+  .talk-title {
+    display: flex;
+    flex-shrink: 0;
+    padding-right: 1rem;
+  }
+
+  .talk-description {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    padding-right: 2rem;
+  }
+}
+.cpp-b_talks_description {
+  background: none!important;
+  .cpp-b_block-text {
+
+  }
+  .bubble-link {
+    width: 9.188rem;
+    height: 7.438rem;
+    box-sizing: border-box;
+    color: @cpp_color;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.375rem;
+    background: url("../template/elem-want-be-speaker.png") no-repeat 0 0;
+    background-size: 100% auto;
+    padding-left: 1.4rem;
+    padding-top: 1.15rem;
+    text-decoration: none;
+    margin: 0 auto;
+  }
+}
+.cpp-b_content-centered {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.1rem;
+}
+.cpp-b_program-day {
+ .date {
+
+ }
+}
+.cpp-b_buy-tickets {
+  .buy-tickets-left {
+    .cpp-e_block-title {
+      margin-bottom: 4.9rem;
+    }
+    .cpp-b_block-text {
+      margin-bottom: 1.6rem;
+    }
+  }
+  .buy-tickets-right {
+    &>div {
+      width: 100%;
+    }
+  }
+}
+.cpp-b_only-desktop {
+  display: none;
+}
+.cpp-b_only-mobile {
+  display: block;
+}
+.cpp-b_sponsors {
+  margin-bottom: 2rem;
+  .sponsor {
+    margin-bottom: 2rem;
+    img {
+      height: auto;
+      max-width: 100%;
+      min-width: 8rem;
+    }
+  }
+}
+
+.cpp-e_green-button {
+  width: 12.563rem;
+  height: 2.75rem;
+  background-color: @cpp_color;
+  border-radius: 3rem;
+  text-align: center;
+  line-height: 2.75rem;
+  text-decoration: none;
+  outline: none;
+  color: #FFF;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    background-color: saturate(@cpp_color, 20%);
+  }
+}
+.cpp-e_logo {
+  .mixin-flex;
+  width: 10.75rem;
+  height: 6.188rem;
+  background: url("../template/logo-cpp.jpg") no-repeat 0 0;
+  background-size: 100% auto;
+}
+.cpp-e_page-title {
+  font-size: 1.438rem;
+  line-height: 2.688rem;
+  font-weight: 300;
+  color: @title_color;
+}
+.cpp-e_hash-link {
+  display: block;
+  height: 0;
+  position: relative;
+}
+.cpp-e_block-title {
+  margin-bottom: 3.7rem;
+  position: relative;
+  &.mod-big {
+    font-size: 1.438rem;
+    line-height: 2.688rem;
+    font-weight: 300;
+    color: @title_color;
+  }
+  &:after {
+    content: "";
+    background: @cpp_color;
+    width: 3.813rem;
+    height: 0.188rem;
+    left: 0;
+    bottom: -1.6rem;
+    position: absolute;
+  }
+}
+
+.cpp-e_title-small {
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.625rem;
+  margin-bottom: 3.7rem;
+  &:after {
+    content: "";
+    background: @cpp_color;
+    width: 3.813rem;
+    height: 0.188rem;
+    left: 0;
+    bottom: -1.6rem;
+    position: absolute;
+  }
+}
+#google_map {
+  width: 100vw;
+  height: 20rem;
+}
+// DESKTOP
+
+@media screen and (orientation: landscape) and (max-resolution: 120dpi) {
+  html {
+    font-size: 0.839vw;
+  }
+  .cpp-e_logo {
+    margin-right: 2.6rem;
+    margin-left: 2.4rem;
+  }
+  .cpp-e_page-title {
+    font-size: 3.438rem;
+    line-height: 4.688rem;
+    margin-left: 2.2rem;
+  }
+  .cpp-r {
+    min-width: @wrap-width;
+    &.main {
+      .cpp-e_page-title {
+        margin-top: 6rem;
+      }
+    }
+    &.talks {
+      .cpp-b_talks {
+        margin-top: -9.5rem;
+      }
+    }
+  }
+  .cpp-r_wrap {
+    width: @wrap-width;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .cpp-r_header {
+    .cpp-b_responsive-row-cols {
+      &.responsive-head {
+        justify-content: space-between;
+        .row-col {
+          flex-direction: row;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .cpp-b_page-top-description {
+    background: url("../template/bg-pluses-page.jpg") repeat-y 50% 0;
+    background-size: 120rem;
+    padding-bottom: 10rem;
+  }
+  .cpp-b_talks {
+    padding: 1.4rem;
+    padding-left: 0;
+    padding-top: 3.2rem;
+    padding-right: 0;
+  }
+  .cpp-b_only-desktop {
+    display: block;
+  }
+  .cpp-b_only-mobile {
+    display: none;
+  }
+  .cpp-b_talk, .cpp-b_talks_description {
+    height: 37.063rem;
+    margin: 0 1.4rem;
+  }
+  .cpp-b_talk {
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+    .talk-head {
+      flex-direction: row;
+      height: 13.4rem;
+    }
+    .talk-speaker-photo {
+      display: flex;
+      align-items: flex-start;
+      margin: 0;
+      img {
+        display: flex;
+        width: 10.938rem;
+        height: 10.938rem;
+      }
+    }
+    .talk-date-track {
+      padding-top: 5.1rem;
+    }
+  }
+  .cpp-b_talks_description {
+    padding-left: 2.2rem;
+    padding-right: 3rem;
+    .bubble-link {
+      margin: 0;
+    }
+  }
+  .cpp-b_section {
+    &.talks-section {
+      padding-bottom: 4.8rem;
+      margin-bottom: 6.25rem;
+      .cpp-r_wrap {
+        padding-left: 0;
+      }
+    }
+    &.section-contacts {
+      .cpp-r_wrap {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .cpp-b_responsive-row-cols {
+        .row-col {
+          &:first-child {
+            width: 22rem;
+            padding-right: 2.5rem;
+            .cpp-b_contacts {
+              top: -0.4rem!important;
+            }
+            .cpp-e_block-title {
+              margin-top: 2.3rem;
+            }
+          }
+        }
+      }
+    }
+    &.gray-section {
+      &:last-child {
+        padding-bottom: 10.25rem;
+      }
+    }
+  }
+  .cpp-b_responsive-row-cols {
+    flex-direction: row;
+    .row-col {
+      align-items: left;
+      padding-bottom: 0;
+    }
+  }
+  .cpp-b_program-day {
+    overflow: hidden;
+    background: url(../template/bg-pluses-table.jpg) repeat-x 50% 50%;
+    background-size: contain;
+    .cpp-r_wrap {
+      padding-top: 0;
+    }
+  }
+  .cpp-b_main-menu {
+    .cpp-b_main-menu-links {
+      flex-direction: row;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  .cpp-b_contacts {
+    margin-right: 2.9rem;
+    top: 2rem;
+  }
+  .cpp-b_number-facts {
+    justify-content: flex-end;
+    padding-right: 4rem;
+    .cpp-b_responsive-row-cols {
+      .number-fact {
+        margin-right: 3.3rem;
+        flex-direction: row;
+      }
+    }
+  }
+  .cpp-b_sidetext {
+    .sidetext-left {
+      width: 25.35rem;
+      img {
+        width: 21.3rem;
+        padding-left: 0.5rem;
+      }
+    }
+    .sidetext-right {
+      width: 51rem;
+    }
+  }
+  .cpp-b_block-text {
+    max-width: 43rem;
+    p {
+
+    }
+  }
+  .cpp-b_content-centered {
+    padding-right: 3rem;
+  }
+  .cpp-b_sponsors {
+    justify-content: flex-start;
+    .sponsor {
+      height: 4.625rem;
+      margin-right: 6rem;
+      img {
+        height: 100%;
+        width: auto;
+        min-width: 0;
+      }
+    }
+  }
+  .cpp-b_buy-tickets {
+    .buy-tickets-left {
+      width: 25rem;
+      padding-top: 1rem;
+    }
+    .buy-tickets-right {
+      width: 51rem;
+    }
+  }
+
+  .cpp-e_main-menu-button {
+    display: none;
+  }
+  .cpp-e_block-title {
+    &.mod-big {
+      font-size: 3.438rem;
+      line-height: 4.688rem;
+      font-weight: 300;
+      margin-bottom: 3.3rem;
+      color: @title_color;
+    }
+  }
+  #google_map {
+    width: 52rem;
+    height: 30rem;
+  }
+}
+
+@media screen and (orientation: portrait) {
+}
