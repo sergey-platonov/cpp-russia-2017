@@ -67,7 +67,7 @@
     <div class="cpp-r_wrap">
         <div class="cpp-b_responsive-row-cols">
             <div class="row-col">
-                <a name="sponsors" class="cpp-e_hash-link"></a>
+                <a name="contacts" class="cpp-e_hash-link"></a>
                 <h2 class="cpp-e_block-title">
                     Контакты
                 </h2>
