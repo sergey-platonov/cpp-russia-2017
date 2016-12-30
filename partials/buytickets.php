@@ -23,7 +23,7 @@
                         (function() {
                             return {
                                 "loadCSS": [
-                                    "http://127.0.0.1:3000/app/build/css/timepad.css"
+                                    "http://2017.cppconf.ru/app/build/css/timepad.css"
                                 ],
                                 "skipBaseCSS": true,
                                 "disableBootstrap": true

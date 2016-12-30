@@ -14,6 +14,6 @@ let map = new google.maps.Map(document.getElementById("google_map"), {
 });
 let marker = new google.maps.Marker({
     map: map,
-    icon: "http://127.0.0.1:3000/app/frontend/template/google-marker.png",
+    icon: "http://2017.cppconf.ru/app/frontend/template/google-marker.png",
     position: position
 });
