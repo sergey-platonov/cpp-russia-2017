@@ -9,22 +9,22 @@
             </div>
             <div class="cpp-b_main-menu-links">
                 <div class="main-menu_link">
-                    <a href="#about">О конференции</a>
+                    <a href="/#about">О конференции</a>
                 </div>
                 <div class="main-menu_link">
-                    <a href="#talks">Доклады</a>
+                    <a href="/talks">Доклады</a>
                 </div>
                 <div class="main-menu_link">
-                    <a href="#program">Программа</a>
+                    <a href="/#program">Программа</a>
                 </div>
                 <div class="main-menu_link">
-                    <a href="#tickets">Билеты</a>
+                    <a href="/#tickets">Билеты</a>
                 </div>
                 <div class="main-menu_link">
-                    <a href="#sponsors">Спонсоры</a>
+                    <a href="/#sponsors">Спонсоры</a>
                 </div>
                 <div class="main-menu_link">
-                    <a href="#contacts">Контакты</a>
+                    <a href="/#contacts">Контакты</a>
                 </div>
             </div>
         </div>

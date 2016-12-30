@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="talk-speaker-photo">
-            <img src="/talks/mikhail-matrosov/photo.jpg" alt="">
+            <img src="<?php echo "/talks/".basename(__DIR__); ?>/photo.jpg" alt="">
         </div>
     </div>
     <div class="talk-speaker-name">

@@ -10,7 +10,7 @@
 @title_color: #2b2a29;
 
 html {
-  font-size: 7vmin;
+  font-size: 5vmin;
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
   color: @text_color_default;
@@ -160,6 +160,12 @@ h1, h2, h3, h4, h5, h6 {
         font-weight: 400;
         line-height: 1.313rem;
         padding: 1rem 1.30rem;
+        a {
+          color: @text_color_default;
+          &:hover {
+            color: @cpp_color;
+          }
+        }
         &:first-child {
           font-size: .938rem;
           font-weight: 700;
@@ -183,6 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .cpp-b_number-facts {
   .mixin-flex;
+  justify-content: space-around;
   .cpp-b_responsive-row-cols {
     .number-fact {
       .mixin-flex;
@@ -204,7 +211,6 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
   }
-
 }
 .cpp-b_sidetext {
   .sidetext-left {
@@ -215,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   .sidetext-right {
-
+    align-items: flex-start;
   }
 }
 .cpp-b_block-text {
@@ -225,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .cpp-b_section {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   &.gray-section {
     background: url("../template/bg-gray-lines.jpg") 50% 0;
     &:last-child {
@@ -239,6 +245,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     .cpp-b_responsive-row-cols {
       .row-col {
+        align-items: flex-start;
         &:first-child {
 
         }
@@ -396,6 +403,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .cpp-b_buy-tickets {
   .buy-tickets-left {
+    align-items: flex-start;
     .cpp-e_block-title {
       margin-bottom: 4.9rem;
     }
@@ -480,6 +488,13 @@ h1, h2, h3, h4, h5, h6 {
     bottom: -1.6rem;
     position: absolute;
   }
+}
+.cpp-e_speaker-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+  margin-top: 0.6rem;
+  color: @text_color_default;
 }
 
 .cpp-e_title-small {
@@ -597,6 +612,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   .cpp-b_section {
+    margin-bottom: 4rem;
     &.talks-section {
       padding-bottom: 4.8rem;
       margin-bottom: 6.25rem;

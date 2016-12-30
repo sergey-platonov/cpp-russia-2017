@@ -9,7 +9,7 @@
                 <h2 class="cpp-e_block-title">
                     Программа
                 </h2>
-                <div class="cpp-b_block-text">
+                <div class="cpp-b_block-text cpp-b_only-desktop">
                     <p>После регистрации и вводной лекции вся программа идёт на трёх треках параллельно. После конференции на нашем сайте можно будет посмотреть pdf и видео докладов.</p>
                 </div>
             </div>
@@ -46,17 +46,18 @@
                 </tr>
                 <tr>
                     <td>12:45 - 13:45</td>
-                    <td><span class="speaker">Rainer Grimm</span>Programming at compile time</td>
+                    <td><span class="speaker">Rainer Grimm</span>
+                        <a href="/talks/rainer-grimm">Programming at compile time</a></td>
                     <td><span class="speaker">Евгений Рыжков, Андрей Карпов</span>Как потратить 10 лет на разработку
                                                                                   анализатора кода
                     </td>
-                    <td>Василий Сорокин, REST сервер на Qt</td>
+                    <td><span class="speaker">Василий Сорокин</span>REST сервер на Qt</td>
                 </tr>
                 <tr>
                     <td>13:45 - 14:45</td>
                     <td>
                         <span class="speaker">Григорий Демченко</span>
-                        Универсальный адаптер
+                        <a href="/talks/grigoriy-demchenko">Универсальный адаптер</a>
                     </td>
                     <td><span class="speaker">Роман Орлов</span>Догнать и перегнать boost::lexical_cast или быстрое
                                                                 преобразование целого числа в строку.
@@ -70,7 +71,8 @@
                 <tr>
                     <td>16:00 - 17:00</td>
                     <td><span class="speaker">Павел Филонов</span>Learning C++ coroutines from examples</td>
-                    <td><span class="speaker">Илья Шишков</span>Пишем код большого проекта: быстро, надёжно, удобно</td>
+                    <td><span class="speaker">Илья Шишков</span>
+                        <a href="/talks/ilya-shishkov">Пишем код большого проекта: быстро, надёжно, удобно</a></td>
                     <td><span class="speaker">Евгений Крутько</span>C++17: параллельная версия стандартных алгоритмов</td>
                 </tr>
                 <tr>
@@ -78,7 +80,8 @@
                     <td>
                         <span class="speaker">Ivan Cukic</span>Going functional
                     </td>
-                    <td><span class="speaker">Михаил Матросов</span>Повседневный С++: алгоритмы и утилитарные типы</td>
+                    <td><span class="speaker">Михаил Матросов</span>
+                        <a href="/talks/mikhail-matrosov">Повседневный С++: алгоритмы и утилитарные типы</a></td>
                     <td><span class="speaker">Максим Хижинский</span>Итераторы в lock-free структурах данных</td>
                 </tr>
                 </tbody>
