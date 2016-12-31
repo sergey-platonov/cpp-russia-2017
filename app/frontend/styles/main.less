@@ -523,7 +523,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // DESKTOP, tablets
 
-@media only screen and (min-device-width: 9in),
+@media only screen and (min-device-width: 8in),
 only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape),
 only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1),
@@ -803,8 +803,8 @@ only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and 
     font-size: 1.1vw;
   }
 }
-// MOBILE
 
+// MOBILE
 @media only screen and (orientation: portrait) and (max-device-width: 9in),
        only screen and (orientation: landscape) and (max-device-width: 8in)
 {
@@ -867,15 +867,18 @@ only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and 
           }
         }
       }
+      .cpp-b_contacts {
+        display: none;
+      }
     }
   }
 
 }
 
 // iPads
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape),
-only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1),
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px),
+only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1),
 only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-width : 1366px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2)
 {
