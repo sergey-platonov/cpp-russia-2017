@@ -4,7 +4,7 @@
         <div class="cpp-b_sidetext cpp-b_responsive-row-cols">
             <a name="about" class="cpp-e_hash-link"></a>
             <div class="sidetext-left row-col">
-                <img src="/app/build/template/matreshka-balalaika.jpg" alt="">
+                <img src="/app/build/template/matreshka-balalaika.svg" alt="">
             </div>
             <div class="sidetext-right row-col">
                 <h2 class="cpp-e_block-title">

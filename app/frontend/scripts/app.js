@@ -27,3 +27,13 @@ window.addEventListener("scroll", function (event) {
         document.querySelector(".responsive-head").classList.remove("fixed");
     }
 });
+
+document.querySelector(".cpp-e_main-menu-button").addEventListener("click", function () {
+   document.querySelector(".cpp-b_main-menu-links").classList.toggle("collapsed");
+});
+
+[].slice.call(document.querySelectorAll(".cpp-b_main-menu-links")).forEach(function (elem) {
+    elem.addEventListener("click", function () {
+        document.querySelector(".cpp-b_main-menu-links").classList.toggle("collapsed");
+    });
+});

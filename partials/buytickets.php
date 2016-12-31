@@ -11,7 +11,7 @@
                     <p>Для тех, кто не может приехать<br>на конференцию, мы организовали<br>онлайн-трансляцию.  Присоединяйтесь!</p>
                 </div>
                 <div class="online">
-                    <img src="/app/frontend/template/elem-buy-tickets.jpg" alt="">
+                    <img src="/app/frontend/template/elem-buy-tickets.svg" alt="">
                 </div>
             </div>
             <div class="buy-tickets-right row-col">

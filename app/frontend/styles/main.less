@@ -27,15 +27,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .cpp-r {
   width: 100vw;
-  &.main {
-    .cpp-r_header {
-      &>.cpp-r_wrap {
-        background: url(../template/bg-main-moscow.jpg) no-repeat 90.5% 0;
-        background-size: 48.5rem auto;
-        padding-top: 2.5rem;
-      }
-    }
-  }
 }
 .cpp-r_wrap {
   width: 100vw;
@@ -70,12 +61,10 @@ h1, h2, h3, h4, h5, h6 {
 
   }
   .cpp-b_main-menu-links {
-    display: flex;
     flex-wrap: wrap;
     font-size: 1rem;
     font-weight: 300;
     line-height: 2.375rem;
-
     flex-direction: column;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -117,11 +106,11 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
     &.phone {
-      background: url(../template/icon-call.png) no-repeat 0 50%;
+      background: url(../template/icon-call.svg) no-repeat 0 50%;
       background-size: auto 100%;
     }
     &.email {
-      background: url(../template/icon-mail.png) no-repeat 0% 78%;
+      background: url(../template/icon-mail.svg) no-repeat 0% 78%;
       background-size: auto 1rem;
     }
   }
@@ -243,11 +232,15 @@ h1, h2, h3, h4, h5, h6 {
     background: url("../template/bg-pluses-table.jpg") repeat-x 50% 50%;
     background-size: cover;
     margin-bottom: 0;
+    .cpp-r_wrap {
+      padding: 0;
+    }
     .cpp-b_responsive-row-cols {
       .row-col {
         align-items: flex-start;
+        padding-bottom: 0;
         &:first-child {
-
+         padding-left: .8rem;
         }
       }
     }
@@ -464,7 +457,7 @@ h1, h2, h3, h4, h5, h6 {
   .mixin-flex;
   width: 10.75rem;
   height: 6.188rem;
-  background: url("../template/logo-cpp.jpg") no-repeat 0 0;
+  background: url("../template/logo-cpp.svg") no-repeat 0 0;
   background-size: auto 100%;
 }
 .cpp-e_page-title {
@@ -530,10 +523,12 @@ h1, h2, h3, h4, h5, h6 {
 
 // DESKTOP, tablets
 
-@media screen and (orientation: landscape) and (max-resolution: 120dpi),
+@media only screen and (min-device-width: 9in),
 only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape),
 only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)
+only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1),
+only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2)
 {
   html {
     font-size: 0.839vw;
@@ -553,6 +548,13 @@ only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (
     &.main {
       .cpp-e_page-title {
         margin-top: 12.2rem;
+      }
+      .cpp-r_header {
+        &>.cpp-r_wrap {
+          background: url(../template/bg-main-moscow.jpg) no-repeat 90.5% 0;
+          background-size: 48.5rem auto;
+          padding-top: 2.5rem;
+        }
       }
     }
     &.talks {
@@ -671,6 +673,7 @@ only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (
     }
     &.section-contacts {
       .cpp-r_wrap {
+        padding: 1rem;
         padding-top: 0;
         padding-bottom: 0;
       }
@@ -679,6 +682,7 @@ only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (
           &:first-child {
             width: 22rem;
             padding-right: 2.5rem;
+            padding-left: 0;
             .cpp-b_contacts {
               top: -0.4rem!important;
             }
@@ -712,6 +716,7 @@ only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (
   }
   .cpp-b_main-menu {
     .cpp-b_main-menu-links {
+      display: flex;
       flex-direction: row;
       padding-top: 0;
       padding-bottom: 0;
@@ -791,16 +796,94 @@ only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (
     height: 30rem;
   }
 }
+
+// regular 15 inch laptop
 @media screen and (orientation: landscape) and (max-resolution: 100dpi) and (max-device-width: 1366px) {
   html {
     font-size: 1.1vw;
   }
 }
+// MOBILE
+
+@media only screen and (orientation: portrait) and (max-device-width: 9in),
+       only screen and (orientation: landscape) and (max-device-width: 8in)
+{
+  .cpp-b_main-menu {
+    width: 4rem;
+    .cpp-b_main-menu-links {
+      display: none;
+      position: fixed;
+      left: 0;
+      background: #FFF;
+      width: 100%;
+      border-bottom: 0.125rem solid;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      top: 4.1rem;
+      padding-left: 1.2rem;
+      &.collapsed {
+        display: flex;
+      }
+    }
+  }
+  .cpp-e_page-title {
+    margin-top: 4rem;
+  }
+  .cpp-b_page-top-description {
+    padding-top: 4rem;
+  }
+  .cpp-r_header {
+    width: 4rem;
+    .responsive-head {
+      position: fixed;
+      background: #fff;
+      height: 4rem;
+      border-bottom: 0.125rem solid;
+      z-index: 4;
+      .cpp-r_wrap {
+        height: 100%;
+        padding: 0;
+        align-items: stretch;
+        .row-col {
+          height: 100%;
+          flex-direction: row;
+          width: 100%;
+          padding-bottom: 0;
+          justify-content: space-between;
+          .cpp-e_logo {
+            height: 55%;
+            margin: 1rem;
+          }
+          .cpp-b_main-menu {
+            height: 100%;
+          }
+          .cpp-e_main-menu-button {
+            display: flex;
+            width: 4rem;
+            height: 100%;
+            background: url("../template/ham-menu.svg") no-repeat 50% 50%;
+            background-size: 80% auto;
+          }
+        }
+      }
+    }
+  }
+
+}
 
 // iPads
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape),
 only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1) {
+only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1),
+only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-width : 1366px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2)
+{
+  html {
+    font-size: 1.2vw;
+  }
+}
+@media only screen and (min-device-width : 10in) and (max-device-width: 13in) {
   html {
     font-size: 1.2vw;
   }
