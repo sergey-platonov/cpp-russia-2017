@@ -3,13 +3,13 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Конференция C++ Russia, 26-27 февраля 2017</title>
+    <title>Конференция C++ Russia, 24-25 февраля 2017</title>
     <?php partial("includes"); ?>
 </head>
 <body class="cpp-r main">
 <header class="cpp-r_header">
+    <?php partial("templates/header"); ?>
     <div class="cpp-r_wrap">
-        <?php partial("templates/header"); ?>
         <!-- -->
         <h1 class="cpp-e_page-title">
             Конференция C++ Russia,<br>
@@ -50,8 +50,7 @@
 <main class="cpp-r_main">
     <?php partial("pages/main"); ?>
 </main>
-<?php partial("templates/footer"); ?>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtxwRGTL4-AKlGJYKDVxzr_MymCP9XpLQ"></script>
-<script src="app/build/scripts/app.js"></script>
+<?php partial("templates/footer"); ?>
 </body>
 </html>

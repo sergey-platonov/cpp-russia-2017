@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100vw;
   &.main {
     .cpp-r_header {
-      .cpp-r_wrap {
+      &>.cpp-r_wrap {
         background: url(../template/bg-main-moscow.jpg) no-repeat 90.5% 0;
         background-size: 48.5rem auto;
         padding-top: 2.5rem;
@@ -407,6 +407,14 @@ h1, h2, h3, h4, h5, h6 {
     .cpp-e_block-title {
       margin-bottom: 4.9rem;
     }
+    .online {
+      display: flex;
+      width: 100%;
+      img {
+        width: 19.313rem;
+        height: 10.938rem;
+      }
+    }
     .cpp-b_block-text {
       margin-bottom: 1.6rem;
     }
@@ -457,7 +465,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 10.75rem;
   height: 6.188rem;
   background: url("../template/logo-cpp.jpg") no-repeat 0 0;
-  background-size: 100% auto;
+  background-size: auto 100%;
 }
 .cpp-e_page-title {
   font-size: 1.438rem;
@@ -469,6 +477,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   height: 0;
   position: relative;
+  top: -4rem;
 }
 .cpp-e_block-title {
   margin-bottom: 3.7rem;
@@ -517,15 +526,22 @@ h1, h2, h3, h4, h5, h6 {
   width: 100vw;
   height: 20rem;
 }
-// DESKTOP
 
-@media screen and (orientation: landscape) and (max-resolution: 120dpi) {
+
+// DESKTOP, tablets
+
+@media screen and (orientation: landscape) and (max-resolution: 120dpi),
+only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape),
+only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)
+{
   html {
     font-size: 0.839vw;
   }
   .cpp-e_logo {
     margin-right: 2.6rem;
     margin-left: 2.4rem;
+    transition: background-size 0.3s ease;
   }
   .cpp-e_page-title {
     font-size: 3.438rem;
@@ -536,7 +552,7 @@ h1, h2, h3, h4, h5, h6 {
     min-width: @wrap-width;
     &.main {
       .cpp-e_page-title {
-        margin-top: 6rem;
+        margin-top: 12.2rem;
       }
     }
     &.talks {
@@ -551,12 +567,44 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1rem;
   }
   .cpp-r_header {
-    .cpp-b_responsive-row-cols {
-      &.responsive-head {
+    .responsive-head {
+      justify-content: space-between;
+      transition: padding-top 0.3s ease;
+      width: 100%;
+      position: fixed;
+      left: 0;
+      padding-top: 0.8rem;
+      top: 0;
+      background: #FFF;
+      .cpp-r_wrap {
+        height: 100%;
         justify-content: space-between;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-left: 1.5rem;
         .row-col {
           flex-direction: row;
           align-items: center;
+        }
+      }
+      &.fixed {
+        height: 4rem;
+        z-index: 4;
+        padding-top: 0;
+        border-bottom: 1px solid;
+        .row-col {
+          height: 100%;
+        }
+        .cpp-e_logo {
+          height: 100%;
+          background-size: auto 80%;
+          background-position: 0 50%;
+        }
+        .cpp-b_contacts {
+          top: 0.5rem;
+          .cpp-e_contact.email {
+            display: none;
+          }
         }
       }
     }
@@ -566,6 +614,7 @@ h1, h2, h3, h4, h5, h6 {
     background: url("../template/bg-pluses-page.jpg") repeat-y 50% 0;
     background-size: 120rem;
     padding-bottom: 10rem;
+    margin-top: 8.2rem;
   }
   .cpp-b_talks {
     padding: 1.4rem;
@@ -742,6 +791,17 @@ h1, h2, h3, h4, h5, h6 {
     height: 30rem;
   }
 }
+@media screen and (orientation: landscape) and (max-resolution: 100dpi) and (max-device-width: 1366px) {
+  html {
+    font-size: 1.1vw;
+  }
+}
 
-@media screen and (orientation: portrait) {
+// iPads
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape),
+only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  html {
+    font-size: 1.2vw;
+  }
 }

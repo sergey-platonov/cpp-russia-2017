@@ -5,3 +5,4 @@
         </div>
     </div>
 </footer>
+<script src="/app/build/scripts/app.js"></script>

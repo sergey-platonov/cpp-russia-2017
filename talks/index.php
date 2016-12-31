@@ -3,13 +3,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Конференция C++ Russia, 26-27 февраля 2017</title>
+    <title>Конференция C++ Russia, 24-25 февраля 2017</title>
     <?php partial("includes"); ?>
 </head>
 <body class="cpp-r talks">
 <header class="cpp-r_header">
-    <div class="cpp-r_wrap">
-        <?php partial("templates/header"); ?>
+    <?php partial("templates/header"); ?>
 </header>
 <main class="cpp-r_main">
     <!-- -->

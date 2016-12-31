@@ -8,8 +8,7 @@
 </head>
 <body class="cpp-r talks">
 <header class="cpp-r_header">
-    <div class="cpp-r_wrap">
-        <?php partial("templates/header"); ?>
+    <?php partial("templates/header"); ?>
 </header>
 <main class="cpp-r_main">
     <!-- -->
