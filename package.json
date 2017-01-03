@@ -1,7 +1,7 @@
 {
-  "name": "Activefish",
+  "name": "Cppconf",
   "version": "1.0.0",
-  "description": "Activefish",
+  "description": "Cppconf",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

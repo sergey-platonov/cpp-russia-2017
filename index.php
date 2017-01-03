@@ -17,7 +17,7 @@
         </h1>
         <!-- -->
         <!-- -->
-        <div class="cpp-b_number-facts">
+        <div class="cpp-b_number-facts cpp-b_only-desktop flex">
             <div class="cpp-b_responsive-row-cols">
                 <!-- -->
                 <div class="number-fact row-col">
