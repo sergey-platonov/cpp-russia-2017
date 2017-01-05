@@ -1,6 +1,6 @@
 <?php
-include ("partial.php");
-include ("vendor/autoload.php");
+include("partial.php");
+include("vendor/autoload.php");
 
 
 /**
@@ -8,41 +8,50 @@ include ("vendor/autoload.php");
  * @return array
  */
 
-function getSpeakerDataByDirName($dir) {
+function getSpeakerDataByDirName($dir)
+{
     $Parsedown = new Parsedown();
     // $Parsedown->text('Hello _Parsedown_!')
 
     $dirname = basename($dir);
-    $jsonData = json_decode(file_get_contents("speakers_data/".$dirname."/data.json"));
 
-    $jsonData->speaker->about = $Parsedown->text(file_get_contents("speakers_data/".$dirname."/speaker_about.md"));
-
-    $jsonData->speaker->image = "/speakers_data/".$dirname."/photo.jpg";
-
-    $jsonData->speaker->dirname = $dirname;
-
-    if ($jsonData->talk) {
-        $jsonData->talk->description = $Parsedown->text(file_get_contents("speakers_data/".$dirname."/talk_description.md"));
-    }
-
-    if ($jsonData->workshop) {
-        $jsonData->workshop->description = $Parsedown->text(file_get_contents("speakers_data/".$dirname."/workshop_description.md"));
-    }
+    $fileContents = file_get_contents("speakers_data/" . $dirname . "/data.json");
     
-    return $jsonData;
+    if ($fileContents) {
+        $jsonData = json_decode($fileContents);
+
+        $jsonData->speaker->about = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/speaker_about.md"));
+
+        $jsonData->speaker->image = "/speakers_data/" . $dirname . "/photo.jpg";
+
+        $jsonData->speaker->dirname = $dirname;
+
+        if ($jsonData->talk) {
+            $jsonData->talk->description = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/talk_description.md"));
+        }
+
+        if ($jsonData->workshop) {
+            $jsonData->workshop->description = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/workshop_description.md"));
+        }
+
+        return $jsonData;
+    } else {
+        return false;
+    }
 }
 
-function getAllSpeakerData() {
-
+function getAllSpeakerData()
+{
     $arr = array();
-      foreach(glob($_SERVER['DOCUMENT_ROOT'].'/speakers_data/*', GLOB_ONLYDIR) as $dir) {
-          array_push($arr, getSpeakerDataByDirName($dir));
-      }
+    foreach (glob($_SERVER['DOCUMENT_ROOT'] . '/speakers_data/*', GLOB_ONLYDIR) as $dir) {
+        array_push($arr, getSpeakerDataByDirName($dir));
+    }
 
     return $arr;
 }
 
-function renderTalkTeaser($speaker) {
+function renderTalkTeaser($speaker)
+{
     $speakerData = $speaker;
 
     if ($speaker->talk->description) {
@@ -51,7 +60,8 @@ function renderTalkTeaser($speaker) {
     } else return false;
 }
 
-function renderTalkTeasers($arrSpeakers) {
+function renderTalkTeasers($arrSpeakers)
+{
     foreach ($arrSpeakers as $speaker) {
         renderTalkTeaser($speaker);
     }

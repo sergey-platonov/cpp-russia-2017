@@ -18,13 +18,23 @@ $router->map( 'GET', '/talks', function() {
 // map talk details page
 $router->map( 'GET', '/talks/[*:speaker]', function($speaker) {
     $speakerData = getSpeakerDataByDirName($speaker);
-    require __DIR__ . '/templates/talk.php';
+    if (!$speakerData) {
+        header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
+        echo "Запрашиваемая страница не найдена";
+    } else {
+        require __DIR__ . '/templates/talk.php';
+    }
 });
 
 // map workshop details page
 $router->map( 'GET', '/workshops/[*:speaker]', function($speaker) {
     $speakerData = getSpeakerDataByDirName($speaker);
-    require __DIR__ . '/templates/workshop.php';
+    if (!$speakerData) {
+        header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
+        echo "Запрашиваемая страница не найдена";
+    } else {
+        require __DIR__ . '/templates/workshop.php';
+    }
 });
 
 // match current request url
