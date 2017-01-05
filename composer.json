@@ -1,0 +1,6 @@
+{
+    "require": {
+        "erusev/parsedown": "^1.6",
+        "altorouter/altorouter": "^1.2"
+    }
+}

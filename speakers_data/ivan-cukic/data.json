@@ -1,0 +1,16 @@
+{
+  "speaker": {
+    "name": "Ivan Cukic"
+  },
+  "talk": {
+    "date": "24/02/17",
+    "track": "TRACK A",
+    "time": "17:00-18:00",
+    "title": "Going functional"
+  },
+  "workshop": {
+    "date": "23/02/17",
+    "time": "9:00 - 20:00",
+    "title": "Applied functional programming in C+"
+  }
+}

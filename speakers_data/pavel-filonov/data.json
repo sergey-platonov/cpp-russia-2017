@@ -1,0 +1,16 @@
+{
+  "speaker": {
+    "name": "Павел Филонов"
+  },
+  "talk": {
+    "date": "24/02/17",
+    "track": "TRACK A",
+    "time": "16:00 - 17:00",
+    "title": "Learning C++ coroutines from examples"
+  },
+  "workshop": {
+    "date": "23/02/17",
+    "time": "9:00 - 20:00",
+    "title": "Continuous integration для C++ разработчика"
+  }
+}

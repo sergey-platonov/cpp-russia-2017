@@ -45,10 +45,13 @@
             <!-- -->
             <!-- -->
             <?php
-                foreach(glob($_SERVER['DOCUMENT_ROOT'].'/talks/*', GLOB_ONLYDIR) as $i=>$dir) {
+                $i = 0;
+                foreach($arrSpeakers as $speaker) {
                     if ($i >= 5) break;
-                    $dirname = basename($dir);
-                    partial("talks/".$dirname."/teaser");
+
+                    if (renderTalkTeaser($speaker)) {
+                        $i++;
+                    }
                 }
             ?>
             <!-- -->
