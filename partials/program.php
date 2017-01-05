@@ -10,11 +10,66 @@
                     Программа
                 </h2>
                 <div class="cpp-b_block-text cpp-b_only-desktop">
-                    <p>После регистрации и вводной лекции вся программа идёт на трёх треках параллельно. После конференции на нашем сайте можно будет посмотреть pdf и видео докладов.</p>
+                    <p>После регистрации и вводной лекции вся программа идёт на трёх треках параллельно. После конференции на нашем сайте можно будет посмотреть слайды и видео докладов.</p>
                 </div>
             </div>
         </div>
     </div>
+    
+        <div class="cpp-b_program-day">
+        <div class="cpp-r_wrap">
+            <div class="date">
+                23/02/17
+            </div>
+            <!-- Workshop prorgam table -->
+            <table>
+                <tbody>
+                <tr>
+                    <th></th>
+                    <th><a href="/workshops/ivan-cukic">Applied functional programming in C++</a></th>
+                    <th><a href="/workshops/rainer-grimm">Embedded Programming with modern C++</a></th>
+                    <th><a href="/workshops/pavel-filonov">Continuous integration для C++ разработчика</a></th>
+                </tr>
+                <tr class="gray">
+                    <td>9:00 - 10:00</td>
+                    <td colspan="3">Регистрация на мастер-классы</td>
+                </tr>
+                <tr>
+                    <td>10:00 - 12:00</td>
+                    <td>Applied functional programming in C++ I</td>
+                    <td>Embedded Programming with modern C++ I</td>
+                    <td>Continuous integration для C++ разработчика I</td>
+                </tr>
+                <tr class="gray">
+                    <td>12:00 - 12:45</td>
+                    <td colspan="3">Кофе-брейк</td>
+                </tr>
+                <tr>
+                    <td>12:45 - 14:45</td>
+                    <td>Applied functional programming in C++ II</td>
+                    <td>Embedded Programming with modern C++ II</td>
+                    <td>Continuous integration для C++ разработчика II</td>
+                </tr>
+                <tr class="gray">
+                    <td>14:45 - 16:00</td>
+                    <td colspan="3">Обед</td>
+                </tr>
+                <tr>
+                    <td>16:00 - 18:00</td>
+                    <td>Applied functional programming in C++ III</td>
+                    <td>Embedded Programming with modern C++ III</td>
+                    <td>Continuous integration для C++ разработчика III</td>
+                </tr>
+                <tr class="gray">
+                    <td>18:00 - 20:00</td>
+                    <td colspan="3">Предрегистрация на конференцию</td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- /Workshop prorgam table -->
+        </div>
+    </div>
+    
     <div class="cpp-b_program-day">
         <div class="cpp-r_wrap">
             <div class="date">
@@ -24,7 +79,7 @@
             <table>
                 <tbody>
                 <tr>
-                    <th>TIME</th>
+                    <th></th>
                     <th>Track A</th>
                     <th>Track B</th>
                     <th>Track С</th>
@@ -78,7 +133,7 @@
                 <tr>
                     <td>17:00 - 18:00</td>
                     <td>
-                        <span class="speaker">Ivan Cukic</span>Going functional
+                        <span class="speaker">Ivan Cukic</span><a href="/talks/ivan-cukic">Going functional</a>
                     </td>
                     <td><span class="speaker">Михаил Матросов</span>
                         <a href="/talks/mikhail-matrosov">Повседневный С++: алгоритмы и утилитарные типы</a></td>
