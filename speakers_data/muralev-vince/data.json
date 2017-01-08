@@ -1,0 +1,12 @@
+
+{
+  "speaker": {
+    "name": "Evgeniy Muralev, Mark Vince"
+  },
+  "talk": {
+    "date": "25/02/17",
+    "track": "Track C",
+    "time": "12:45 - 13:45",
+    "title": "Working with the compiler, not against it"
+  }
+}

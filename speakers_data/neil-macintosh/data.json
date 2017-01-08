@@ -1,0 +1,12 @@
+
+{
+  "speaker": {
+    "name": "Neil MacIntosh"
+  },
+  "talk": {
+    "date": "24/02/17",
+    "track": "Track C",
+    "time": "10:00 - 12:00",
+    "title": "Guideline Support Library"
+  }
+}
