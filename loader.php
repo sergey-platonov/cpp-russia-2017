@@ -22,7 +22,10 @@ function getSpeakerDataByDirName($dir)
 
         $jsonData->speaker->about = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/speaker_about.md"));
 
-        $jsonData->speaker->image = "/speakers_data/" . $dirname . "/photo.jpg";
+		if (file_exists("speakers_data/" . $dirname . "/photo.jpg"))
+			$jsonData->speaker->image = "/speakers_data/" . $dirname . "/photo.jpg";
+		else
+			$jsonData->speaker->image = "/speakers_data/" . $dirname . "/photo.png";
 
         $jsonData->speaker->dirname = $dirname;
 
