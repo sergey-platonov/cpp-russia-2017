@@ -92,7 +92,7 @@
                     <td>10:00 - 12:00</td>
                     <td colspan="3">
                         <span class="speaker">Neil MacIntosh</span>
-                        Guideline Support Library
+                        <a href="/talks/neil-macintosh">Guideline Support Library</a>
                     </td>
                 </tr>
                 <tr class="gray">
@@ -103,10 +103,9 @@
                     <td>12:45 - 13:45</td>
                     <td><span class="speaker">Rainer Grimm</span>
                         <a href="/talks/rainer-grimm">Programming at compile time</a></td>
-                    <td><span class="speaker">Евгений Рыжков, Андрей Карпов</span>Как потратить 10 лет на разработку
-                                                                                  анализатора кода
+                    <td><span class="speaker">Евгений Рыжков, Андрей Карпов</span><a href="/talks/ryzhkov-karpov">Как потратить 10 лет на разработку анализатора кода</a>
                     </td>
-                    <td><span class="speaker">Василий Сорокин</span>REST сервер на Qt</td>
+                    <td><span class="speaker">Василий Сорокин</span><a href="/talks/vasiliy-sorokin">REST сервер на Qt</a></td>
                 </tr>
                 <tr>
                     <td>13:45 - 14:45</td>
@@ -114,10 +113,9 @@
                         <span class="speaker">Григорий Демченко</span>
                         <a href="/talks/grigoriy-demchenko">Универсальный адаптер</a>
                     </td>
-                    <td><span class="speaker">Роман Орлов</span>Догнать и перегнать boost::lexical_cast или быстрое
-                                                                преобразование целого числа в строку.
+                    <td><span class="speaker">Роман Орлов</span><a href="/talks/roman-orlov">Догнать и перегнать boost::lexical_cast или быстрое преобразование целого числа в строку</a>
                     </td>
-                    <td><span class="speaker">Денис Кормалев</span>История одного бага</td>
+                    <td><span class="speaker">Денис Кормалев</span><a href="/talks/denis-kormalev">История одного бага</a></td>
                 </tr>
                 <tr class="gray">
                     <td>14:45 - 16:00</td>
@@ -125,10 +123,10 @@
                 </tr>
                 <tr>
                     <td>16:00 - 17:00</td>
-                    <td><span class="speaker">Павел Филонов</span>Learning C++ coroutines from examples</td>
+                    <td><span class="speaker">Павел Филонов</span><a href="/talks/pavel-filonov">Learning C++ coroutines from examples</a></td>
                     <td><span class="speaker">Илья Шишков</span>
                         <a href="/talks/ilya-shishkov">Пишем код большого проекта: быстро, надёжно, удобно</a></td>
-                    <td><span class="speaker">Евгений Крутько</span>C++17: параллельная версия стандартных алгоритмов</td>
+                    <td><span class="speaker">Евгений Крутько</span><a href="/talks/evgeniy-krutko">C++17: параллельная версия стандартных алгоритмов</a></td>
                 </tr>
                 <tr>
                     <td>17:00 - 18:00</td>
@@ -137,7 +135,71 @@
                     </td>
                     <td><span class="speaker">Михаил Матросов</span>
                         <a href="/talks/mikhail-matrosov">Повседневный С++: алгоритмы и утилитарные типы</a></td>
-                    <td><span class="speaker">Максим Хижинский</span>Итераторы в lock-free структурах данных</td>
+                    <td><span class="speaker">Максим Хижинский</span><a href="/talks/maxim-khizhinskiy">Итераторы в lock-free структурах данных</a></td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- /Prorgam table -->
+        </div>
+    </div>
+    
+        <div class="cpp-b_program-day">
+        <div class="cpp-r_wrap">
+            <div class="date">
+                25/02/17
+            </div>
+            <!-- Prorgam table -->
+            <table>
+                <tbody>
+                <tr>
+                    <th></th>
+                    <th>Track A</th>
+                    <th>Track B</th>
+                    <th>Track С</th>
+                </tr>
+                <tr>
+                    <td>10:00 - 12:00</td>
+                    <td colspan="3">
+                        <span class="speaker">Сергей Зубков</span>
+                        <a href="/talks/sergey-zubkov">Core guidelince library</a>
+                    </td>
+                </tr>
+                <tr class="gray">
+                    <td>12:00 - 12:45</td>
+                    <td colspan="3">Кофе-брейк</td>
+                </tr>
+                <tr>
+                    <td>12:45 - 13:45</td>
+                    <td><span class="speaker">Юрий Ефимочев</span>
+                        <a href="/talks/efim-yury">clang-tidy: путешествие внутрь C++ Abstract Syntax Tree</a></td>
+                    <td><span class="speaker">Александр Боргардт</span>
+                    <a href="/talks/aleksandr-borgardt">Модели акторов: миф или реальность?</a>
+                    </td>
+                    <td><span class="speaker">Evgeniy Muralev, Mark Vince</span>
+                    <a href="/talks/muralev-vince">Working with the compiler, not against it</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13:45 - 14:45</td>
+                    <td><span class="speaker"></span></td>
+                    <td><span class="speaker"></span></td>
+                    <td><span class="speaker"></span></td>
+                </tr>
+                <tr class="gray">
+                    <td>14:45 - 16:00</td>
+                    <td colspan="3">Обед</td>
+                </tr>
+                <tr>
+                    <td>16:00 - 17:00</td>
+                    <td><span class="speaker"></span></td>
+                    <td><span class="speaker"></span></td>
+                    <td><span class="speaker"></span></td>
+                </tr>
+                <tr>
+                    <td>17:00 - 18:00</td>
+                    <td><span class="speaker"></span></td>
+                    <td><span class="speaker"></span></td>
+                    <td><span class="speaker"></span></td>
                 </tr>
                 </tbody>
             </table>
