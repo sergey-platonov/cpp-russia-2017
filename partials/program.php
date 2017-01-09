@@ -181,9 +181,11 @@
                 </tr>
                 <tr>
                     <td>13:45 - 14:45</td>
-                    <td><span class="speaker"></span></td>
-                    <td><span class="speaker"></span></td>
-                    <td><span class="speaker"></span></td>
+                    <td><span class="speaker">Timur Doumler</span>TBA</td>
+                    <td><span class="speaker">Евгений Охотников</span>
+                    <a href="/talks/evgeniy-okhotnikov">Для чего мы делали собственный акторный фреймворк и что в итоге получили?</a>
+                    </td>
+                    <td><span class="speaker">Антон Полухин</span>TBA</td>
                 </tr>
                 <tr class="gray">
                     <td>14:45 - 16:00</td>
