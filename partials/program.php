@@ -185,7 +185,8 @@
                     <td><span class="speaker">Евгений Охотников</span>
                     <a href="/talks/evgeniy-okhotnikov">Для чего мы делали собственный акторный фреймворк и что в итоге получили?</a>
                     </td>
-                    <td><span class="speaker">Антон Полухин</span>TBA</td>
+                    <td><span class="speaker">Антон Полухин</span>
+                    <a href="/talks/anton-polukhin">Как делать не надо: C++ велосипедостроение для профессионалов</a></td>
                 </tr>
                 <tr class="gray">
                     <td>14:45 - 16:00</td>
