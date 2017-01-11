@@ -194,7 +194,8 @@
                 </tr>
                 <tr>
                     <td>16:00 - 17:00</td>
-                    <td><span class="speaker"></span></td>
+                    <td><span class="speaker">Дмитрий Вьюков</span>
+                    <a href="/talks/dmitry-vyukov/">Fuzzing: The New Unit Testing</a></td>
                     <td><span class="speaker"></span></td>
                     <td><span class="speaker"></span></td>
                 </tr>
