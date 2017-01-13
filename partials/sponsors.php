@@ -27,9 +27,11 @@
             </div>
             <!-- -->
             <!-- -->
+            <!--
             <div class="sponsor row-col">
                 <a href="http://opensoftdev.ru/"><img src="/app/frontend/template/partners/opensoft.png" alt=""></a>
             </div>
+            -->
             <!-- -->
             <!-- -->
             <div class="sponsor row-col">
