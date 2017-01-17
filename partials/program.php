@@ -29,40 +29,44 @@
                     <th><a href="/workshops/ivan-cukic">Applied functional programming in C++</a></th>
                     <th><a href="/workshops/rainer-grimm">Embedded Programming with modern C++</a></th>
                     <th><a href="/workshops/pavel-filonov">Continuous integration для C++ разработчика</a></th>
+                    <th><a href="/workshops/jetbrains">JetBrains workshop</a></th>
                 </tr>
                 <tr class="gray">
                     <td>9:00 - 10:00</td>
-                    <td colspan="3">Регистрация на мастер-классы</td>
+                    <td colspan="4">Регистрация на мастер-классы</td>
                 </tr>
                 <tr>
                     <td>10:00 - 12:00</td>
                     <td>Applied functional programming in C++ I</td>
                     <td>Embedded Programming with modern C++ I</td>
                     <td>Continuous integration для C++ разработчика I</td>
+                    <td>Продуктивная кроссплатформенная разработка на C++ с использованием CLion</td>
                 </tr>
                 <tr class="gray">
                     <td>12:00 - 12:45</td>
-                    <td colspan="3">Кофе-брейк</td>
+                    <td colspan="4">Кофе-брейк</td>
                 </tr>
                 <tr>
                     <td>12:45 - 14:45</td>
                     <td>Applied functional programming in C++ II</td>
                     <td>Embedded Programming with modern C++ II</td>
                     <td>Continuous integration для C++ разработчика II</td>
+                    <td>CMake – билд-система, о которой должен знать каждый С++ разработчик</td>
                 </tr>
                 <tr class="gray">
                     <td>14:45 - 16:00</td>
-                    <td colspan="3">Обед</td>
+                    <td colspan="4">Обед</td>
                 </tr>
                 <tr>
                     <td>16:00 - 18:00</td>
                     <td>Applied functional programming in C++ III</td>
                     <td>Embedded Programming with modern C++ III</td>
                     <td>Continuous integration для C++ разработчика III</td>
+                    <td>Продуктивная разработка на C++ с использованием ReSharper C++</td>
                 </tr>
                 <tr class="gray">
                     <td>18:00 - 20:00</td>
-                    <td colspan="3">Предрегистрация на конференцию</td>
+                    <td colspan="4">Предрегистрация на конференцию</td>
                 </tr>
                 </tbody>
             </table>
