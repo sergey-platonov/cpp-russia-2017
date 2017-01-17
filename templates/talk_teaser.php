@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="talk-speaker-photo">
-            <img src="<?php echo $speakerData->speaker->image; ?>" alt="<?php echo $speakerData->speaker->name; ?>">
+            <img src="<?php echo $speakerData->speaker->images[0]; ?>" alt="<?php echo $speakerData->speaker->name; ?>">
         </div>
     </div>
     <div class="talk-speaker-name">

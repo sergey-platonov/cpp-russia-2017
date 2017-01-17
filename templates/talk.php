@@ -23,9 +23,12 @@
                 </div>
             </div>
             <div class="cpp-b_sidetext cpp-b_responsive-row-cols">
-                <div class="sidetext-left row-col">
-                    <img src="<?php echo $speakerData->speaker->image; ?>" style="width: 15.938rem;" alt="<?php echo $speakerData->speaker->name; ?>">
+				<div class="sidetext-left row-col">				
+                <?php foreach ($speakerData->speaker->images as $filename): ?>
+                    <img src="../<?php echo $filename; ?>" style="width: 15.938rem;">
+                <?php endforeach; ?>
                 </div>
+                
                 <div class="sidetext-right row-col">
                     <div class="cpp-b_block-text">
                         <div class="cpp-e_speaker-name">

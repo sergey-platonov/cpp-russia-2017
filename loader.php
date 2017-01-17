@@ -11,7 +11,6 @@ include("vendor/autoload.php");
 function getSpeakerDataByDirName($dir)
 {
     $Parsedown = new Parsedown();
-    // $Parsedown->text('Hello _Parsedown_!')
 
     $dirname = basename($dir);
 
@@ -21,12 +20,8 @@ function getSpeakerDataByDirName($dir)
         $jsonData = json_decode($fileContents);
 
         $jsonData->speaker->about = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/speaker_about.md"));
-
-		if (file_exists("speakers_data/" . $dirname . "/photo.jpg"))
-			$jsonData->speaker->image = "/speakers_data/" . $dirname . "/photo.jpg";
-		else
-			$jsonData->speaker->image = "/speakers_data/" . $dirname . "/photo.png";
-
+		$jsonData->speaker->images = glob("speakers_data/" . $dirname . "/*.{gif,jpg,png}", GLOB_BRACE);
+		
         $jsonData->speaker->dirname = $dirname;
 
         if ($jsonData->talk) {
