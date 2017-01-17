@@ -29,7 +29,7 @@
                     <th><a href="/workshops/ivan-cukic">Applied functional programming in C++</a></th>
                     <th><a href="/workshops/rainer-grimm">Embedded Programming with modern C++</a></th>
                     <th><a href="/workshops/pavel-filonov">Continuous integration для C++ разработчика</a></th>
-                    <th><a href="/workshops/jetbrains">JetBrains workshop</a></th>
+                    <th><a href="/workshops/jetbrains">Инструменты для эффективной разработки на C++</a></th>
                 </tr>
                 <tr class="gray">
                     <td>9:00 - 10:00</td>
@@ -185,7 +185,9 @@
                 </tr>
                 <tr>
                     <td>13:45 - 14:45</td>
-                    <td><span class="speaker">Timur Doumler</span>TBA</td>
+                    <td><span class="speaker">Timur Doumler</span>
+                    <a href="/talks/timur-doumler">TBA</a>
+                    </td>
                     <td><span class="speaker">Евгений Охотников</span>
                     <a href="/talks/evgeniy-okhotnikov">Для чего мы делали собственный акторный фреймворк и что в итоге получили?</a>
                     </td>
