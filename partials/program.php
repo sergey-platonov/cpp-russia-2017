@@ -26,10 +26,10 @@
                 <tbody>
                 <tr>
                     <th></th>
-                    <th><a href="/workshops/ivan-cukic">Applied functional programming in C++</a></th>
-                    <th><a href="/workshops/rainer-grimm">Embedded Programming with modern C++</a></th>
-                    <th><a href="/workshops/pavel-filonov">Continuous integration для C++ разработчика</a></th>
-                    <th><a href="/workshops/jetbrains">Инструменты для эффективной разработки на C++</a></th>
+                    <th><?php echo getWorkshopTitle("/workshops/ivan-cukic") ?></th>
+                    <th><?php echo getWorkshopTitle("/workshops/rainer-grimm") ?></th>
+                    <th><?php echo getWorkshopTitle("/workshops/pavel-filonov") ?></th>
+                    <th><?php echo getWorkshopTitle("/workshops/jetbrains") ?></th>
                 </tr>
                 <tr class="gray">
                     <td>9:00 - 10:00</td>
@@ -95,8 +95,7 @@
                 <tr>
                     <td>10:00 - 12:00</td>
                     <td colspan="3">
-                        <span class="speaker">Neil MacIntosh</span>
-                        <a href="/talks/neil-macintosh">Guideline Support Library</a>
+                        <?php echo getTalkInfo("/talks/neil-macintosh") ?>
                     </td>
                 </tr>
                 <tr class="gray">
@@ -105,21 +104,21 @@
                 </tr>
                 <tr>
                     <td>12:45 - 13:45</td>
-                    <td><span class="speaker">Rainer Grimm</span>
-                        <a href="/talks/rainer-grimm">Programming at compile time</a></td>
-                    <td><span class="speaker">Евгений Рыжков, Андрей Карпов</span><a href="/talks/ryzhkov-karpov">Как потратить 10 лет на разработку анализатора кода</a>
+                    <td>
+                        <?php echo getTalkInfo("/talks/rainer-grimm") ?></td>
+                    <td><?php echo getTalkInfo("/talks/ryzhkov-karpov") ?>
                     </td>
-                    <td><span class="speaker">Василий Сорокин</span><a href="/talks/vasiliy-sorokin">REST сервер на Qt</a></td>
+                    <td><?php echo getTalkInfo("/talks/vasiliy-sorokin") ?></td>
                 </tr>
                 <tr>
                     <td>13:45 - 14:45</td>
                     <td>
-                        <span class="speaker">Григорий Демченко</span>
-                        <a href="/talks/grigoriy-demchenko">Универсальный адаптер</a>
+                        
+                        <?php echo getTalkInfo("/talks/grigoriy-demchenko") ?>
                     </td>
-                    <td><span class="speaker">Роман Орлов</span><a href="/talks/roman-orlov">Догнать и перегнать boost::lexical_cast или быстрое преобразование целого числа в строку</a>
+                    <td><?php echo getTalkInfo("/talks/roman-orlov") ?>
                     </td>
-                    <td><span class="speaker">Денис Кормалев</span><a href="/talks/denis-kormalev">История одного бага</a></td>
+                    <td><?php echo getTalkInfo("/talks/denis-kormalev") ?></td>
                 </tr>
                 <tr class="gray">
                     <td>14:45 - 16:00</td>
@@ -127,19 +126,19 @@
                 </tr>
                 <tr>
                     <td>16:00 - 17:00</td>
-                    <td><span class="speaker">Павел Филонов</span><a href="/talks/pavel-filonov">Learning C++ coroutines from examples</a></td>
-                    <td><span class="speaker">Илья Шишков</span>
-                        <a href="/talks/ilya-shishkov">Пишем код большого проекта: быстро, надёжно, удобно</a></td>
-                    <td><span class="speaker">Евгений Крутько</span><a href="/talks/evgeniy-krutko">C++17: параллельная версия стандартных алгоритмов</a></td>
+                    <td><?php echo getTalkInfo("/talks/pavel-filonov") ?></td>
+                    <td>
+                        <?php echo getTalkInfo("/talks/ilya-shishkov") ?></td>
+                    <td><?php echo getTalkInfo("/talks/evgeniy-krutko") ?></td>
                 </tr>
                 <tr>
                     <td>17:00 - 18:00</td>
                     <td>
-                        <span class="speaker">Ivan Cukic</span><a href="/talks/ivan-cukic">Going functional</a>
+                        <?php echo getTalkInfo("/talks/ivan-cukic") ?>
                     </td>
-                    <td><span class="speaker">Михаил Матросов</span>
-                        <a href="/talks/mikhail-matrosov">Повседневный С++: алгоритмы и утилитарные типы</a></td>
-                    <td><span class="speaker">Максим Хижинский</span><a href="/talks/maxim-khizhinskiy">Итераторы в lock-free структурах данных</a></td>
+                    <td>
+                        <?php echo getTalkInfo("/talks/mikhail-matrosov") ?></td>
+                    <td><?php echo getTalkInfo("/talks/maxim-khizhinskiy") ?></td>
                 </tr>
                 </tbody>
             </table>
@@ -164,8 +163,8 @@
                 <tr>
                     <td>10:00 - 12:00</td>
                     <td colspan="3">
-                        <span class="speaker">Сергей Зубков</span>
-                        <a href="/talks/sergey-zubkov">Core guidelince library</a>
+                        
+                        <?php echo getTalkInfo("/talks/sergey-zubkov") ?>
                     </td>
                 </tr>
                 <tr class="gray">
@@ -174,25 +173,25 @@
                 </tr>
                 <tr>
                     <td>12:45 - 13:45</td>
-                    <td><span class="speaker">Юрий Ефимочев</span>
-                        <a href="/talks/efim-yury">clang-tidy: путешествие внутрь C++ Abstract Syntax Tree</a></td>
-                    <td><span class="speaker">Александр Боргардт</span>
-                    <a href="/talks/aleksandr-borgardt">Модели акторов: миф или реальность?</a>
+                    <td>
+                        <?php echo getTalkInfo("/talks/efim-yury") ?></td>
+                    <td>
+                    <?php echo getTalkInfo("/talks/aleksandr-borgardt") ?>
                     </td>
-                    <td><span class="speaker">Evgeniy Muralev, Mark Vince</span>
-                    <a href="/talks/muralev-vince">Working with the compiler, not against it</a>
+                    <td>
+                    <?php echo getTalkInfo("/talks/muralev-vince") ?>
                     </td>
                 </tr>
                 <tr>
                     <td>13:45 - 14:45</td>
-                    <td><span class="speaker">Timur Doumler</span>
-                    <a href="/talks/timur-doumler">TBA</a>
+                    <td>
+                    <?php echo getTalkInfo("/talks/timur-doumler") ?>
                     </td>
-                    <td><span class="speaker">Евгений Охотников</span>
-                    <a href="/talks/evgeniy-okhotnikov">Для чего мы делали собственный акторный фреймворк и что в итоге получили?</a>
+                    <td>
+                    <?php echo getTalkInfo("/talks/evgeniy-okhotnikov") ?>
                     </td>
-                    <td><span class="speaker">Антон Полухин</span>
-                    <a href="/talks/anton-polukhin">Как делать не надо: C++ велосипедостроение для профессионалов</a></td>
+                    <td>
+                    <?php echo getTalkInfo("/talks/anton-polukhin") ?></td>
                 </tr>
                 <tr class="gray">
                     <td>14:45 - 16:00</td>
@@ -200,8 +199,8 @@
                 </tr>
                 <tr>
                     <td>16:00 - 17:00</td>
-                    <td><span class="speaker">Дмитрий Вьюков</span>
-                    <a href="/talks/dmitry-vyukov/">Fuzzing: The New Unit Testing</a></td>
+                    <td>
+                    <?php echo getTalkInfo("/talks/dmitry-vyukov/") ?></td>
                     <td><span class="speaker"></span></td>
                     <td><span class="speaker"></span></td>
                 </tr>
