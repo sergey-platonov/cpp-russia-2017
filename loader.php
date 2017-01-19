@@ -38,6 +38,27 @@ function getSpeakerDataByDirName($dir)
     }
 }
 
+function getTalkInfo($dir) 
+{
+	$speakerData = getSpeakerDataByDirName($dir);
+    if (!$speakerData) {
+		return '';
+    } else {
+        return '<span class="speaker">'.$speakerData->speaker->name.'</span>'.'<a href="'.$dir.'">'.$speakerData->talk->title.'</a>';
+    }
+}
+
+function getWorkshopTitle($dir) 
+{
+	$speakerData = getSpeakerDataByDirName($dir);
+    if (!$speakerData) {
+		return '';
+    } else {
+        return '<a href="'.$dir.'">'.$speakerData->workshop->title.'</a>';
+    }
+}
+
+
 function getAllSpeakerData()
 {
     $arr = array();
