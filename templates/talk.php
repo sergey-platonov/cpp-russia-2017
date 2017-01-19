@@ -23,10 +23,14 @@
                 </div>
             </div>
             <div class="cpp-b_sidetext cpp-b_responsive-row-cols">
-				<div class="sidetext-left row-col">				
+				<div class="sidetext-left row-col">
+				<?php if (count($speakerData->speaker->images)): ?>
                 <?php foreach ($speakerData->speaker->images as $filename): ?>
                     <img src="/<?php echo $filename; ?>" style="width: 15.938rem;">
                 <?php endforeach; ?>
+                <?php else: ?>
+					<img src="/speakers_data/photo.png" style="width: 15.938rem;">
+                <?php endif ?>
                 </div>
                 
                 <div class="sidetext-right row-col">

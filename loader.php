@@ -72,11 +72,16 @@ function getAllSpeakerData()
 function renderTalkTeaser($speaker)
 {
     $speakerData = $speaker;
+    
+    if (count($speakerData->speaker->images) == 0)
+		return false;
 
     if ($speaker->talk->description) {
         require __DIR__ . '/templates/talk_teaser.php';
         return true;
-    } else return false;
+    } else { 
+		return false;
+	}
 }
 
 function renderTalkTeasers($arrSpeakers)

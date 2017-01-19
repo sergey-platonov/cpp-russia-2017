@@ -46,12 +46,19 @@
             <!-- -->
             <?php
                 $i = 0;
+                $chosen = array();
+                
                 foreach($arrSpeakers as $speaker) {
-                    if ($i >= 5) break;
-
+                    $rnd = rand(0, count($arrSpeakers) - 1);
+                    if ($chosen[$rnd])
+						continue;
+					
+					$chosen[$rnd] = true;
+                    $speaker = $arrSpeakers[$rnd];
                     if (renderTalkTeaser($speaker)) {
-                        $i++;
-                    }
+						if (++$i >= 5) 
+							break;
+					}
                 }
             ?>
             <!-- -->
