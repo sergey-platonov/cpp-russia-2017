@@ -199,16 +199,15 @@
                 </tr>
                 <tr>
                     <td>16:00 - 17:00</td>
-                    <td>
-                    <?php echo getTalkInfo("/talks/dmitry-vyukov/") ?></td>
-                    <td><span class="speaker"></span></td>
-                    <td><span class="speaker"></span></td>
+                    <td><?php echo getTalkInfo("/talks/dmitry-vyukov/") ?></td>
+                    <td><?php echo getTalkInfo("/talks/anton-naumovich/") ?></td>
+                    <td><</td>
                 </tr>
                 <tr>
                     <td>17:00 - 18:00</td>
-                    <td><span class="speaker"></span></td>
-                    <td><span class="speaker"></span></td>
-                    <td><span class="speaker"></span></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 </tbody>
             </table>

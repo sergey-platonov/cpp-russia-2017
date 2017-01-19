@@ -25,7 +25,7 @@
             <div class="cpp-b_sidetext cpp-b_responsive-row-cols">
 				<div class="sidetext-left row-col">				
                 <?php foreach ($speakerData->speaker->images as $filename): ?>
-                    <img src="../<?php echo $filename; ?>" style="width: 15.938rem;">
+                    <img src="/<?php echo $filename; ?>" style="width: 15.938rem;">
                 <?php endforeach; ?>
                 </div>
                 

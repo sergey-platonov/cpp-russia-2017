@@ -44,7 +44,7 @@ function getTalkInfo($dir)
     if (!$speakerData) {
 		return '';
     } else {
-        return '<span class="speaker">'.$speakerData->speaker->name.'</span>'.'<a href="'.$dir.'">'.$speakerData->talk->title.'</a>';
+        return '<span class="speaker">'.$speakerData->speaker->name.'</span>'.'<a class="talk-link" href="'.$dir.'">'.$speakerData->talk->title.'</a>';
     }
 }
 
