@@ -50,10 +50,10 @@
                 
                 foreach($arrSpeakers as $speaker) {
                     $rnd = rand(0, count($arrSpeakers) - 1);
-                    if ($chosen[$rnd])
+                    if (in_array($rnd, $chosen))
 						continue;
 					
-					$chosen[$rnd] = true;
+					array_push($chosen, $rnd);
                     $speaker = $arrSpeakers[$rnd];
                     if (renderTalkTeaser($speaker)) {
 						if (++$i >= 5) 

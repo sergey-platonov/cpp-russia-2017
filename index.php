@@ -5,13 +5,15 @@ $router = new AltoRouter();
 
 // map homepage
 $router->map( 'GET', '/', function() {
-    $arrSpeakers = getAllSpeakerData();
+	$data = getAllSpeakerData();
+    $arrSpeakers = $data["speakers"];
+
         require __DIR__ . '/main.php';
 });
 
 // map all talks page
 $router->map( 'GET', '/talks', function() {
-    $arrSpeakers = getAllSpeakerData();
+    $arrSpeakers = getAllSpeakerData()["speakers"];
     require __DIR__ . '/templates/talks.php';
 });
 
