@@ -18,7 +18,7 @@ function getSpeakerDataByDirName($dir)
     
     if ($fileContents) {
         $jsonData = json_decode($fileContents);
-		if (!property_exists($jsonData->talk, "system")) {
+		if (property_exists($jsonData, "talk") && !property_exists($jsonData->talk, "system")) {
 			$jsonData->speaker->about = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/speaker_about.md"));
 			$jsonData->speaker->images = glob("speakers_data/" . $dirname . "/*.{gif,jpg,png}", GLOB_BRACE);
 			
@@ -75,10 +75,10 @@ function getAllSpeakerData()
     $schedule = array();
     foreach (glob($_SERVER['DOCUMENT_ROOT'] . '/speakers_data/*', GLOB_ONLYDIR) as $dir) {
 		$data = getSpeakerDataByDirName($dir);
-		if (!$data->talk->system)
+		if ($data && property_exists($data, "talk") && !$data->talk->system)
 			array_push($speakers, $data);
-        if (property_exists($data, "talk")) 
-        $schedule[$data->talk->date][$data->talk->time][$data->talk->track] = $data;
+        if ($data && property_exists($data, "talk")) 
+			$schedule[$data->talk->date][$data->talk->time][$data->talk->track] = $data;
     }
 
     return array(
