@@ -1,0 +1,12 @@
+
+{
+  "speaker": {
+    "name": "Василий Галкин"
+  },
+  "talk": {
+    "date": "25/02/17",
+    "track": "Track B",
+    "time": "17:00 - 18:00",
+    "title": "Lessons learnt from 5+ years with 6+ MLoC 15+ y.o. code"
+  }
+}
