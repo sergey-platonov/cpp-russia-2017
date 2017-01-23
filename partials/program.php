@@ -201,7 +201,7 @@
                     <td>16:00 - 17:00</td>
                     <td><?php echo getTalkInfo("/talks/dmitry-vyukov/") ?></td>
                     <td><?php echo getTalkInfo("/talks/anton-naumovich/") ?></td>
-                    <td><</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>17:00 - 18:00</td>
