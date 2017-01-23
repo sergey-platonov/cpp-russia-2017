@@ -72,7 +72,6 @@
             <!-- /Workshop prorgam table -->
         </div>
     </div>
-    
 	<?php renderMainProgram(); ?>
 </section>
 <!-- /Программа -->
