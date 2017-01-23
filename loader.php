@@ -18,20 +18,21 @@ function getSpeakerDataByDirName($dir)
     
     if ($fileContents) {
         $jsonData = json_decode($fileContents);
+		if (property_exists($jsonData, "talk") && !property_exists($jsonData->talk, "system")) {
+			$jsonData->speaker->about = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/speaker_about.md"));
+			$jsonData->speaker->images = glob("speakers_data/" . $dirname . "/*.{gif,jpg,png}", GLOB_BRACE);
+			
+			$jsonData->speaker->dirname = $dirname;
 
-        $jsonData->speaker->about = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/speaker_about.md"));
-		$jsonData->speaker->images = glob("speakers_data/" . $dirname . "/*.{gif,jpg,png}", GLOB_BRACE);
-		
-        $jsonData->speaker->dirname = $dirname;
+			if (property_exists($jsonData, "talk") && $jsonData->talk) {
+				$jsonData->talk->description = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/talk_description.md"));
+				$jsonData->talk->system = false;
+			}
 
-        if ($jsonData->talk) {
-            $jsonData->talk->description = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/talk_description.md"));
-        }
-
-        if ($jsonData->workshop) {
-            $jsonData->workshop->description = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/workshop_description.md"));
-        }
-
+			if (property_exists($jsonData, "workshop") && $jsonData->workshop) {
+				$jsonData->workshop->description = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/workshop_description.md"));
+			}
+		}
         return $jsonData;
     } else {
         return false;
@@ -48,6 +49,15 @@ function getTalkInfo($dir)
     }
 }
 
+function renderTalkInfo($data) 
+{
+    if (!$data) {
+		return '';
+    } else {
+        return '<td><span class="speaker">'.$speakerData->speaker->name.'</span>'.'<a class="talk-link" href="'.$dir.'">'.$speakerData->talk->title.'</a></td>';
+    }
+}
+
 function getWorkshopTitle($dir) 
 {
 	$speakerData = getSpeakerDataByDirName($dir);
@@ -61,12 +71,20 @@ function getWorkshopTitle($dir)
 
 function getAllSpeakerData()
 {
-    $arr = array();
+    $speakers = array();
+    $schedule = array();
     foreach (glob($_SERVER['DOCUMENT_ROOT'] . '/speakers_data/*', GLOB_ONLYDIR) as $dir) {
-        array_push($arr, getSpeakerDataByDirName($dir));
+		$data = getSpeakerDataByDirName($dir);
+		if ($data && property_exists($data, "talk") && !$data->talk->system)
+			array_push($speakers, $data);
+        if ($data && property_exists($data, "talk")) 
+			$schedule[$data->talk->date][$data->talk->time][$data->talk->track] = $data;
     }
 
-    return $arr;
+    return array(
+		"speakers" => $speakers,
+		"schedule" => $schedule
+    );
 }
 
 function renderTalkTeaser($speaker)
@@ -90,3 +108,24 @@ function renderTalkTeasers($arrSpeakers)
         renderTalkTeaser($speaker);
     }
 }
+
+
+function renderDay($schedule, $day)
+{
+	$timeArr = array_keys($schedule[$day]);
+	$tracks = array_keys($schedule[$day][reset($timeArr)]);
+	sort($timeArr);
+	require __DIR__ . '/templates/program_day.php';
+}
+
+function renderMainProgram() 
+{
+	$data = getAllSpeakerData();
+	$schedule = $data["schedule"];
+	$days = array_keys($schedule);
+	sort($days);
+	foreach ($days as $day)
+		renderDay($schedule, $day);
+		
+}
+

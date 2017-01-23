@@ -1,0 +1,11 @@
+{
+  "talk": {
+    "date": "24/02/17",
+    "track": "TRACK С",
+    "time": "09:00 - 10:00",
+    "system": true,
+    "class": "gray",
+    "text": "Регистрация",
+    "colspan": 3
+  }
+}
