@@ -27,7 +27,7 @@
 							$rowsText .= '<td colspan="'.$data->talk->colspan.'">';
 						else
 							$rowsText .= '<td>';
-						if (!$data->talk->system)
+						if (!$data->system)
 							$rowsText .= '<span class="speaker">'.$data->speaker->name.'</span>'.'<a class="talk-link" href="/talks/'.$data->speaker->dirname.'">'.$data->talk->title.'</a></td>'."\n";
 						else
 							$rowsText .= $data->talk->text."</td>\n";

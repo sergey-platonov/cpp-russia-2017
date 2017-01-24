@@ -3,9 +3,9 @@
     "date": "25/02/17",
     "track": "TRACK С",
     "time": "12:00 - 12:45",
-    "system": true,
     "class": "gray",
     "text": "Кофе-брейк",
     "colspan": 3
-  }
+  },
+  "system": true
 }
