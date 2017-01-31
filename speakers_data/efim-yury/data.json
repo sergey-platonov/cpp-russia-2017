@@ -6,7 +6,7 @@
   "talk": {
     "date": "25/02/17",
     "track": "Track A",
-    "time": "12:45 - 13:45",
+    "time": "16:00 - 17:00",
     "title": "clang-tidy: путешествие внутрь C++ Abstract Syntax Tree"
   }
 }
