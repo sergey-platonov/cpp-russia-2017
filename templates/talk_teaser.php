@@ -5,7 +5,7 @@
                 <?php echo $speakerData->talk->date; ?>
             </div>
             <div class="track">
-                <?php echo $speakerData->talk->track; ?><br>
+                <?php echo ucwords($speakerData->talk->track); ?><br>
                 <?php echo $speakerData->talk->time; ?>
             </div>
         </div>
