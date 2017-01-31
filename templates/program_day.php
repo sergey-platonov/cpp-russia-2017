@@ -9,9 +9,9 @@
 				<tr>
 					<th></th>
 					<?php 
-					foreach ($tracks as $track) {
+					sort($tracks);
+					foreach ($tracks as $track)
 						echo "<th>".$track."</th>";
-					}
 					?>
 				</tr>
 				<?php				
@@ -21,21 +21,31 @@
 					$firstTr = "<tr";
 					$timeCol = ">\n<td>".$time."</td>\n";
 					$rowsText = "";
+					$rows = [];
 					foreach ($schedule[$day][$time] as $data) {
 						$colspan = property_exists($data->talk, 'colspan') ? $data->talk->colspan : 1;
+						$rowText = '';
 						if ($colspan > 1)
-							$rowsText .= '<td colspan="'.$data->talk->colspan.'">';
+							$rowText .= '<td colspan="'.$data->talk->colspan.'">';
 						else
-							$rowsText .= '<td>';
-						if (!$data->system)
-							$rowsText .= '<span class="speaker">'.$data->speaker->name.'</span>'.'<a class="talk-link" href="/talks/'.$data->speaker->dirname.'">'.$data->talk->title.'</a></td>'."\n";
-						else
-							$rowsText .= $data->talk->text."</td>\n";
+							$rowText .= '<td>';
+						if (!$data->system) {
+							$rowText .= '<span class="speaker">'.$data->speaker->name.'</span>'.'<a class="talk-link" href="/talks/'.$data->speaker->dirname.'">'.$data->talk->title.'</a></td>'."\n";
+							$rows[$data->talk->track] = $rowText;
+						}
+						else {
+							$rowsText .= $rowText . $data->talk->text."</td>\n";
+						}
 						if (property_exists($data->talk, "class") && !$classSet) {
 							$firstTr .= ' class = "'.$data->talk->class.'"';
 							$classSet = true;
 						}
 					}
+					if (!$data->system) {
+						foreach ($tracks as $track)
+							$rowsText .= $rows[$track];
+					}
+					
 					$closeTr = "</tr>\n";
 					echo $firstTr.$timeCol.$rowsText.$closeTr;
 				}

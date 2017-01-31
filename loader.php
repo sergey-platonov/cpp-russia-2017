@@ -20,8 +20,9 @@ function getSpeakerDataByDirName($dir)
         $jsonData = json_decode($fileContents);
         if (!property_exists($jsonData, "system")) {
 			$jsonData->system = false;
-			if (property_exists($jsonData, "talk") && $jsonData->talk)
+			if (property_exists($jsonData, "talk") && $jsonData->talk) 
 				$jsonData->talk->description = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/talk_description.md"));
+			
 				
 			if (property_exists($jsonData, "speaker") && $jsonData->speaker) {
 				$jsonData->speaker->about = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/speaker_about.md"));
@@ -32,6 +33,8 @@ function getSpeakerDataByDirName($dir)
 			if (property_exists($jsonData, "workshop") && $jsonData->workshop)
 				$jsonData->workshop->description = $Parsedown->text(file_get_contents("speakers_data/" . $dirname . "/workshop_description.md"));
 		}
+		if (property_exists($jsonData, "talk") && $jsonData->talk) 
+			$jsonData->talk->track = strtolower($jsonData->talk->track);
         return $jsonData;
     } else {
         return false;
@@ -73,11 +76,11 @@ function getAllSpeakerData()
     $speakers = array();
     $schedule = array();
     foreach (glob($_SERVER['DOCUMENT_ROOT'] . '/speakers_data/*', GLOB_ONLYDIR) as $dir) {
-		$data = getSpeakerDataByDirName($dir);
+		$data = getSpeakerDataByDirName($dir);				
 		if ($data && property_exists($data, "talk")) {
 			if (!$data->system)
 				array_push($speakers, $data);
-        
+
 			$schedule[$data->talk->date][$data->talk->time][$data->talk->track] = $data;
 		}
     }
