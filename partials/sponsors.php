@@ -35,7 +35,12 @@
             <!-- -->
             <!-- -->
             <div class="sponsor row-col">
-                <a href="http://www.aligntech.com/"><img src="/app/frontend/template/partners/logo_color_rgb_large.jpg" alt=""></a>
+                <a href="http://www.aligntech.com/"><img src="/app/frontend/template/partners/logo_color_rgb_large.png" alt=""></a>
+            </div>
+            <!-- -->
+            <!-- -->
+            <div class="sponsor row-col">
+                <a href="https://www.artec3d.com/ru/"><img src="/app/frontend/template/partners/artec3d_black.svg" alt=""></a>
             </div>
             <!-- -->
             <!-- -->
