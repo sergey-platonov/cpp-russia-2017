@@ -13,3 +13,5 @@ The requirements are:
 
 After the workshop you will understand the well-known sentence from Bjarne Stroustrup about c++11 in embedded programming: 
 "... make C++ even better for embedded system programming..".
+
+The participant should have an laptop with an decent C++ compiler (C++11 at least). Basic knowledge in C++ is sufficient.

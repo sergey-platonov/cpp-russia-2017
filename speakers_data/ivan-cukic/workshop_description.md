@@ -6,3 +6,9 @@
 * Monads: optional<T>, expected<T, E>, future<T>, ...
 * Monads: coroutines in C++ as a special syntax for handling monads
 * Implementing programs without mutable state
+
+I could provide a VirtualBox image with the latest GCC and Clang so that we have the same environment when working. 
+Otherwise, the prerequisites would be the latest released GCC, Clang and Qt (just in case).
+
+As for the knowledge, it is enough to say it is for C++ professionals - so not for beginners. 
+
