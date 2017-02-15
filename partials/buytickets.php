@@ -17,7 +17,7 @@
             <div class="buy-tickets-right row-col">
                 <div class="cpp-b_only-desktop">
                     <a href="https://c-user-group-russia.timepad.ru/event/407033/" data-twf-placeholder="yes">Перейтик заказу билетов</a>
-                    <script type="text/javascript" defer="defer" charset="UTF-8" data-timepad-customized="3453"
+                    <script type="text/javascript" defer="defer" charset="UTF-8" data-timepad-customized="24933"
                         data-twf2s-event--id="407033" data-timepad-widget-v2="event_register"
                         src="https://timepad.ru/js/tpwf/loader/min/loader.js">
                         (function() {
