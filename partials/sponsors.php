@@ -35,7 +35,7 @@
             <!-- -->
             <!-- -->
             <div class="sponsor row-col">
-                <a href="http://www.aligntech.com/"><img src="/app/frontend/template/partners/logo_color_rgb_large.png" alt=""></a>
+                <a href="https://jobs.aligntech.com/"><img src="/app/frontend/template/partners/logo_color_rgb_large.png" alt=""></a>
             </div>
             <!-- -->
             <!-- -->
