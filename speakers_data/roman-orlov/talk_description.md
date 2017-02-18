@@ -1,3 +1,6 @@
 Из документации к библиотеке Boost Lexical cast известно, что преобразование целого числа в строку lexical_cast выполняет быстрее других стандартных средств. Можно ли написать более быстрый алгоритм с не меньшей степенью обобщенности?
+
 В докладе будет рассмотрена реализация такого алгоритма, который на синтетических тестах опережает lexical_cast в 2-5 раз в зависимости от компилятора и флагов оптимизации. Особенность реализации состоит в отсутствии циклов и рекурсивных вызовов времени исполнения - только рекурсия на этапе компиляции.
 Также будут затронуты особенности компиляции предлагаемого решения на Сlang и GCC.
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/yqeu910tW6bMCv" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RomanOrlov11/faster-than-boostlexicalcast" title="Догнать и перегнать boost::lexical_cast" target="_blank">Догнать и перегнать boost::lexical_cast</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/RomanOrlov11">Roman Orlov</a></strong> </div>
