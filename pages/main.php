@@ -17,10 +17,11 @@
                        В течении года сообщество проводит встречи в разных городах России: Москве, Санкт-Петербурге, Новосибирске, Екатеринбурге, Нижнем Новгороде, Саратове.<br>
                        На встречах выступают докладчики из разных городов и стран.</p>
                 </div>
-                <div class="cpp-b_bordered-text">
+                <!-- <div class="cpp-b_bordered-text">
                     Открывать конференцию будет Neil MacIntsoh: principal software engineer<br>
                     в Microsoft, мейнтенер реализации Guideline Support Library от Microsoft.
                 </div>
+		-->
             </div>
         </div>
     </div>
