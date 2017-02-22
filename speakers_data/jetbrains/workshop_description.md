@@ -62,7 +62,8 @@ ReSharper C++ – расширение Visual Studio для разработки
     * GCC/G++ или Clang, в случае Windows – установленные MinGW или Cygwin
     * Make
     * [CLion 2016.3](https://www.jetbrains.com/clion/download/) (для использования продукта во время мастер-класса и некоторое время после него, после регистрации, вы сможете получить бесплатную лицензию, ограниченную по времени использования)
-* Проект для изучения во время мастер-класса с GitHub: ссылка будет доступна чуть позже
+* [Проект CLion](https://github.com/JetBrains/cpp-russia-2017-clion)
+* [Проект CMake](https://github.com/JetBrains/cpp-russia-2017-cmake)
 * Qt5
 
 ### Для участия в мастер-классе по ReSharper C++ вам понадобится
@@ -71,4 +72,4 @@ ReSharper C++ – расширение Visual Studio для разработки
 * Visual Studio 2015
 * [ReSharper 2016.3](https://www.jetbrains.com/resharper-cpp/download/) (для использования продукта во время мастер-класса и некоторое время после него, после регистрации, вы сможете получить бесплатную лицензию, ограниченную по времени использования)
 * Boost версии не ниже 1.61
-* Проект для изучения во время мастер-класса с GitHub: ссылка будет доступна чуть позже
+* [Проект ReSharper C++](https://github.com/JetBrains/cpp-russia-2017-rscpp)
