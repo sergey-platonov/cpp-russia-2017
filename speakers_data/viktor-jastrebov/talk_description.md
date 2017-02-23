@@ -7,3 +7,5 @@
 Использование на практике приведенных подходов и принципов позволяет упростить процесс поддержки и модификации существующего кода, 
 а также дает уверенность в надежности работы добавляемого нового функционала. 
 В конечном итоге это приводит к повышению качества разрабатываемого продукта.
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/jfwD5qE8PB3mh6" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/victor-yastrebov/ss-72511971" title="Использование юнит-тестов для повышения качества разработки" target="_blank">Использование юнит-тестов для повышения качества разработки</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/victor-yastrebov">victor-yastrebov</a></strong> </div>
