@@ -3,3 +3,4 @@
 Также мы обсудим проблемы и неудобства, которые испытывает программист, когда пишет код без исключений.
 В конце, я попытаюсь показать, как можно проектировать структуры данных, контейнеры для удобной работы в средах с исключениями и без исключений.
 
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/CcGC1njNB42auo" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/sermp/c-3-72448538" title="Алексей Кутумов, C++ без исключений, часть 3" target="_blank">Алексей Кутумов, C++ без исключений, часть 3</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/sermp">Platonov Sergey</a></strong> </div>
