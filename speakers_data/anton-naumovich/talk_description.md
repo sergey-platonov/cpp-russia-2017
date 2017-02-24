@@ -1,3 +1,5 @@
 ﻿Современная качественная промышленная разработка ПО - процесс гораздо более комплексный чем просто кодирование. 
 Он включает в себя такие практики и артефакты, как ревью кода, непрерывная интеграция, юнит-тестирование, статический анализ кода, анализ покрытия кода, стандарты кодирования и так далее. 
 Мы разберемся, как эти процессы внедрить в жизнь на реальных проектах и каким инструментарием для этого можно воспользоваться применительно к С++.
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/fBRJsdDev9KTjv" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/corehard_by/quality-assurance-of-large-c-projects" title="Quality assurance of large c++ projects" target="_blank">Quality assurance of large c++ projects</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/corehard_by">corehard_by</a></strong> </div>
