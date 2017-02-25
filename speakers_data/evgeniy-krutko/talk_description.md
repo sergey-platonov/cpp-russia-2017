@@ -1,1 +1,4 @@
 Каждый новый стандарт C++ приносит разработчикам новые инструменты, позволяющие реализовывать логику в гараздо более лаконичном, читаемом и в тоже время эффективном коде. В докладе пойдет реч о Parallel STL. Это расширение стандартной библиотеки из C++17 позволяет с минимальными усилиями делать многопоточными приложения, использующие стандартную библиотеку алгоритмов. 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/4iJ9gJDIS1Bj0r" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/EvgenyKrutko/parallel-stl" title="Parallel STL" target="_blank">Parallel STL</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/EvgenyKrutko">Evgeny Krutko</a></strong> </div>
+
