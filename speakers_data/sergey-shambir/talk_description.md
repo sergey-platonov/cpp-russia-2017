@@ -5,4 +5,6 @@
 
 Эти вещи будут показаны на примере взаимных вызовов между C++ и Javascript в одном приложении с помощью CEF3.
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/LWakF0UR53sZwE" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/SergeyPlatonov/promisea-c-javascript" title="Сергей Шамбир, Адаптация Promise/A+ для взаимодействия между C++ и Javascript" target="_blank">Сергей Шамбир, Адаптация Promise/A+ для взаимодействия между C++ и Javascript</a></strong></div>
+[Репозиторий с примерами на github](https://github.com/sergey-shambir/cpp-promise-demo).
+
+<iframe src="//pro.ispringcloud.ru/acc/8gSlStAyNjA2/view/2606-SS3h5-LoBQz-7Fo0V/embedded?from=embed&amp;fit=1" width="595" height="485" border="0"  scrolling="auto" allowtransparency="true" allowfullscreen="1" style="border: medium none; background-color: transparent;" frameborder="0"></iframe><div style="margin-bottom:5px"> <strong> <a href="//pro.ispringcloud.ru/acc/8gSlStAyNjA2/view/2606-SS3h5-LoBQz-7Fo0V/embedded" title="Сергей Шамбир, Адаптация Promise/A+ для взаимодействия между C++ и Javascript" target="_blank">Сергей Шамбир, Адаптация Promise/A+ для взаимодействия между C++ и Javascript</a></strong></div>
