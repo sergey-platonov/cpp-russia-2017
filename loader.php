@@ -14,7 +14,8 @@ function getSpeakerDataByDirName($dir)
 
     $dirname = basename($dir);
 
-    $fileContents = file_get_contents("speakers_data/" . $dirname . "/data.json");
+    $root = $GLOBALS['project_root'] . '/';
+    $fileContents = file_get_contents($root . "speakers_data/" . $dirname . "/data.json");
     
     if ($fileContents) {
         $jsonData = json_decode($fileContents);
@@ -37,6 +38,7 @@ function getSpeakerDataByDirName($dir)
 			$jsonData->talk->track = strtolower($jsonData->talk->track);
         return $jsonData;
     } else {
+	print "File " . $root . "  " . $dirname . " not found";
         return false;
     }
 }
@@ -60,23 +62,23 @@ function renderTalkInfo($data)
     }
 }
 
-function getWorkshopTitle($dir) 
+function getWorkshopTitle($prefix, $dir) 
 {
-	$speakerData = getSpeakerDataByDirName($dir);
+    $speakerData = getSpeakerDataByDirName($dir);
     if (!$speakerData) {
 		return '';
     } else {
-        return '<a href="'.$dir.'">'.$speakerData->workshop->title.'</a>';
+        return '<a href="./'.$preifx.$dir.'">'.$speakerData->workshop->title.'</a>';
     }
 }
 
 
-function getAllSpeakerData()
+function getAllSpeakerData($projectRoot)
 {
     $speakers = array();
     $schedule = array();
-    foreach (glob($_SERVER['DOCUMENT_ROOT'] . '/speakers_data/*', GLOB_ONLYDIR) as $dir) {
-		$data = getSpeakerDataByDirName($dir);				
+    foreach (glob($projectRoot . '/speakers_data/*', GLOB_ONLYDIR) as $dir) {
+		$data = getSpeakerDataByDirName($dir);
 		if ($data && property_exists($data, "talk")) {
 			if (!$data->system)
 				array_push($speakers, $data);
@@ -122,9 +124,9 @@ function renderDay($schedule, $day)
 	require __DIR__ . '/templates/program_day.php';
 }
 
-function renderMainProgram() 
+function renderMainProgram($projectRoot) 
 {
-	$data = getAllSpeakerData();
+	$data = getAllSpeakerData($projectRoot);
 	$schedule = $data["schedule"];
 	$days = array_keys($schedule);
 	sort($days);

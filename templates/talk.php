@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Конференция C++ Russia, <?php echo $speakerData->speaker->name; ?> - <?php echo $speakerData->talk->title; ?></title>
-    <?php partial("includes"); ?>
+    <?php partial(("includes"), $GLOBALS["project_root"]); ?>
 </head>
 <body class="cpp-r talks">
 <header class="cpp-r_header">
-    <?php partial("templates/header"); ?>
+    <?php partial(("templates/header"), $GLOBALS["project_root"]); ?>
 </header>
 <main class="cpp-r_main">
     <!-- -->
@@ -26,10 +26,10 @@
 				<div class="sidetext-left row-col">
 				<?php if (count($speakerData->speaker->images)): ?>
                 <?php foreach ($speakerData->speaker->images as $filename): ?>
-                    <img src="/<?php echo $filename; ?>" style="width: 15.938rem;">
+                    <img src="/<?php echo $GLOBALS["prefix"].'/'.$filename; ?>" style="width: 15.938rem;">
                 <?php endforeach; ?>
                 <?php else: ?>
-					<img src="/speakers_data/photo.png" style="width: 15.938rem;">
+					<img src=/"<?php echo $GLOBALS["prefix"];?>/speakers_data/photo.png" style="width: 15.938rem;">
                 <?php endif ?>
                 </div>
                 
@@ -47,8 +47,8 @@
             </div>
         </div>
     </div>
-    <?php partial("partials/sponsors"); ?>
+    <?php partial(("partials/sponsors"), $GLOBALS["project_root"]); ?>
 </main>
-<?php partial("templates/footer"); ?>
+<?php partial(("templates/footer"), $GLOBALS["project_root"]); ?>
 </body>
 </html>

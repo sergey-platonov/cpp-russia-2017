@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Конференция C++ Russia, <?php echo $speakerData->speaker->name; ?> - <?php echo $speakerData->workshop->title; ?></title>
-    <?php partial("includes"); ?>
+    <?php partial(("includes"), $GLOBALS["project_root"]); ?>
 </head>
 <body class="cpp-r talks">
 <header class="cpp-r_header">
-    <?php partial("templates/header"); ?>
+    <?php partial(("templates/header"), $GLOBALS["project_root"]); ?>
 </header>
 <main class="cpp-r_main">
     <!-- -->
@@ -42,8 +42,8 @@
             </div>
         </div>
     </div>
-    <?php partial("partials/sponsors"); ?>
+    <?php partial(("partials/sponsors"), $GLOBALS["project_root"]); ?>
 </main>
-<?php partial("templates/footer"); ?>
+<?php partial(("templates/footer"), $GLOBALS["project_root"]); ?>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php
-function partial($templatePath) {
-    $root = $_SERVER['DOCUMENT_ROOT']."/";
+function partial($templatePath, $rootDir) {
+    $root = $rootDir."/";
     include($root.$templatePath.".php");
 }

@@ -25,10 +25,10 @@
                 <tbody>
                 <tr>
                     <th></th>
-                    <th><?php echo getWorkshopTitle("/workshops/ivan-cukic") ?></th>
-                    <th><?php echo getWorkshopTitle("/workshops/rainer-grimm") ?></th>
-                    <th><?php echo getWorkshopTitle("/workshops/pavel-filonov") ?></th>
-                    <th><?php echo getWorkshopTitle("/workshops/jetbrains") ?></th>
+		    <th><?php echo getWorkshopTitle($GLOBALS["prefix"], "workshops/ivan-cukic") ?></th>
+                    <th><?php echo getWorkshopTitle($GLOBALS["prefix"], "workshops/rainer-grimm") ?></th>
+                    <th><?php echo getWorkshopTitle($GLOBALS["prefix"], "workshops/pavel-filonov") ?></th>
+                    <th><?php echo getWorkshopTitle($GLOBALS["prefix"], "workshops/jetbrains") ?></th>
                 </tr>
                 <tr class="gray">
                     <td>9:00 - 10:00</td>
@@ -72,6 +72,6 @@
             <!-- /Workshop prorgam table -->
         </div>
     </div>
-	<?php renderMainProgram(); ?>
+	<?php renderMainProgram($GLOBALS['project_root']); ?>
 </section>
 <!-- /Программа -->

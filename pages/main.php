@@ -70,9 +70,9 @@
     </div>
 </section>
 <!-- /Доклады -->
-<?php partial("partials/program"); ?>
-<?php partial("partials/buytickets"); ?>
-<?php partial("partials/sponsors"); ?>
+<?php partial("partials/program", $GLOBALS["project_root"]); ?>
+<?php partial("partials/buytickets", $GLOBALS["project_root"]); ?>
+<?php partial("partials/sponsors", $GLOBALS["project_root"]); ?>
 <!-- Контакты -->
 <section class="cpp-b_section section-contacts">
     <div class="cpp-r_wrap">
