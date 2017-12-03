@@ -45,7 +45,7 @@ $match = $router->match();
 if( $match && is_callable( $match['target'] ) ) {
     call_user_func_array( $match['target'], $match['params'] );
 } else {
-    print $_SERVER['REQUEST_URI'];
+    // print $_SERVER['REQUEST_URI'];
     // no route was matched
     header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
 }
